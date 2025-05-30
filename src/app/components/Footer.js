@@ -34,7 +34,7 @@ const Footer = () => {
                 Our Products
               </Link>
               <Link
-                href="/brand-story"
+                href="/brand"
                 className="text-amber-800 hover:text-amber-600 transition-colors font-medium"
                 aria-label="Learn about our brand story"
               >
@@ -69,7 +69,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/brand-story"
+                  href="/brand"
                   className="text-gray-600 hover:text-amber-800 transition-colors flex items-center group"
                 >
                   <span className="inline-block w-0 group-hover:w-2 transition-all duration-300 h-0.5 bg-amber-700 mr-0 group-hover:mr-2"></span>
@@ -83,15 +83,6 @@ const Footer = () => {
                 >
                   <span className="inline-block w-0 group-hover:w-2 transition-all duration-300 h-0.5 bg-amber-700 mr-0 group-hover:mr-2"></span>
                   Contact Us
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/privacy-policy"
-                  className="text-gray-600 hover:text-amber-800 transition-colors flex items-center group"
-                >
-                  <span className="inline-block w-0 group-hover:w-2 transition-all duration-300 h-0.5 bg-amber-700 mr-0 group-hover:mr-2"></span>
-                  Privacy Policy
                 </Link>
               </li>
             </ul>
@@ -249,8 +240,8 @@ const Footer = () => {
           {/* Copyright & Credits */}
           <div className="space-y-3">
             <p className="text-center text-gray-600">
-              © {currentYear} Nalmanam Masala. Manufactured & Marketed by Sri
-              Murughan Flour Mill India Pvt Ltd. All rights reserved.
+              © {currentYear} Nalmanam Masala. <br></br>Manufactured & Marketed
+              by Sri Murughan Flour Mill India Pvt Ltd. All rights reserved.
             </p>
             <div className="flex justify-center space-x-4">
               <a

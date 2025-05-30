@@ -277,3 +277,47 @@ body {
 .delay-800 {
   animation-delay: 800ms;
 }
+
+/* Brand Story */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.timeline-item {
+  opacity: 0;
+}
+
+.timeline-item.animate-on-scroll {
+  opacity: 1;
+  transform: translateX(0) !important;
+}
+
+.value-item {
+  opacity: 0;
+}
+
+.value-item.animate-on-scroll {
+  opacity: 1;
+  transform: translateY(0) !important;
+}
+
+.process-item {
+  opacity: 0;
+}
+
+.process-item.animate-on-scroll {
+  opacity: 1;
+  transform: scale(1) !important;
+}

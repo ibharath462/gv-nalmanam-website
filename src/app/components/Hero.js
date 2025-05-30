@@ -22,7 +22,7 @@ const HeroSection = () => {
       description:
         "Our masalas are procured from fresh farms of direct farmers and prepared using traditional home-made processes without added preservatives, artificial colors, or sulphur.",
       cta: "Our Story",
-      ctaLink: "/brand-story",
+      ctaLink: "/brand",
     },
     {
       title: "Legacy of Quality",

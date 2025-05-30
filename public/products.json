@@ -1,0 +1,397 @@
+{
+    "categories": [
+      {
+        "name": {
+          "en": "Masala Products",
+          "ta": "மசாலா பொருட்கள்"
+        },
+        "products": [
+          {
+            "name": {
+              "en": "Sambar Powder",
+              "ta": "சாம்பார் பொடி"
+            },
+            "variants": [
+              {
+                "weight": "100gm",
+                "price": 40
+              },
+              {
+                "weight": "250gm",
+                "price": 90
+              },
+              {
+                "weight": "500gm",
+                "price": 180
+              }
+            ],
+            "image":"/images/sambar.jpg"
+          },
+          {
+            "name": {
+              "en": "Chilli Powder",
+              "ta": "வர மிளகாய் தூள்"
+            },
+            "variants": [
+              {
+                "weight": "100gm",
+                "price": 35
+              },
+              {
+                "weight": "250gm",
+                "price": 80
+              },
+              {
+                "weight": "500gm",
+                "price": 160
+              }
+            ]
+          },
+          {
+            "name": {
+              "en": "Coriander Powder",
+              "ta": "கொத்தமல்லி தூள்"
+            },
+            "variants": [
+              {
+                "weight": "100gm",
+                "price": 30
+              },
+              {
+                "weight": "250gm",
+                "price": 70
+              },
+              {
+                "weight": "500gm",
+                "price": 140
+              }
+            ]
+          },
+          {
+            "name": {
+              "en": "Curry Masala",
+              "ta": "கறி மசாலா"
+            },
+            "variants": [
+              {
+                "weight": "100gm",
+                "price": 50
+              },
+              {
+                "weight": "250gm",
+                "price": 125
+              },
+              {
+                "weight": "500gm",
+                "price": 250
+              }
+            ]
+          },
+          {
+            "name": {
+              "en": "Turmeric",
+              "ta": "மஞ்சள் தூள்"
+            },
+            "variants": [
+              {
+                "weight": "100gm",
+                "price": 40
+              }
+            ]
+          },
+          {
+            "name": {
+              "en": "Rasam Powder",
+              "ta": "ரசம் பொடி"
+            },
+            "variants": [
+              {
+                "weight": "100gm",
+                "price": 50
+              }
+            ],
+            "image":"/images/fennel.jpg"
+          },
+          {
+            "name": {
+              "en": "Easy Sambar Mix",
+              "ta": "ஈசி சாம்பார் மிக்ஸ்"
+            },
+            "variants": [
+              {
+                "weight": "200gm",
+                "price": 95
+              }
+            ]
+          },
+          {
+            "name": {
+              "en": "Vathapulikulambu",
+              "ta": "வத்தபுளிக்குளம்பு பொடி"
+            },
+            "variants": [
+              {
+                "weight": "100gm",
+                "price": 40
+              }
+            ]
+          },
+          {
+            "name": {
+              "en": "Pepper Powder",
+              "ta": "மிளகு தூள்"
+            },
+            "variants": [
+              {
+                "weight": "100gm",
+                "price": 110
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": {
+          "en": "Podi Varieties",
+          "ta": "பொடி வகைகள்"
+        },
+        "products": [
+          {
+            "name": {
+              "en": "Idly Podi",
+              "ta": "இட்லி பொடி"
+            },
+            "variants": [
+              {
+                "weight": "100gm",
+                "price": 50
+              }
+            ]
+          },
+          {
+            "name": {
+              "en": "Poondu Podi",
+              "ta": "பூண்டு பொடி"
+            },
+            "variants": [
+              {
+                "weight": "100gm",
+                "price": 50
+              }
+            ]
+          },
+          {
+            "name": {
+              "en": "Paruppu Podi",
+              "ta": "பருப்பு பொடி"
+            },
+            "variants": [
+              {
+                "weight": "100gm",
+                "price": 50
+              }
+            ]
+          },
+          {
+            "name": {
+              "en": "Karuppu ulundhu Idly Podi",
+              "ta": "கருப்பு உளுந்து இட்லிப்பொடி"
+            },
+            "variants": [
+              {
+                "weight": "100gm",
+                "price": 50
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": {
+          "en": "Herbal Products",
+          "ta": "மூலிகை பொருட்கள்"
+        },
+        "products": [
+          {
+            "name": {
+              "en": "Nalangu Mavu",
+              "ta": "நலங்கு மாவு"
+            },
+            "variants": []
+          },
+          {
+            "name": {
+              "en": "Shikkakai Powder",
+              "ta": "சீயக்காய் தூள்"
+            },
+            "variants": [
+              {
+                "weight": "100gm",
+                "price": 70
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": {
+          "en": "Wood Pressed Oils",
+          "ta": "மரசெக்கு எண்ணெய் வகைகள்"
+        },
+        "products": [
+          {
+            "name": {
+              "en": "Groundnut Oil",
+              "ta": "கடலை எண்ணெய்"
+            },
+            "variants": [
+              {
+                "weight": "500ml",
+                "price": 140
+              },
+              {
+                "weight": "1 litre",
+                "price": 280
+              },
+              {
+                "weight": "3 litres",
+                "price": 840
+              },
+              {
+                "weight": "5 litres",
+                "price": 1400
+              }
+            ]
+          },
+          {
+            "name": {
+              "en": "Sesame Oil",
+              "ta": "நல்லெண்ணெய்"
+            },
+            "variants": [
+              {
+                "weight": "200ml",
+                "price": 100
+              },
+              {
+                "weight": "500ml",
+                "price": 250
+              },
+              {
+                "weight": "1 litre",
+                "price": 500
+              },
+              {
+                "weight": "3 litres",
+                "price": 1500
+              },
+              {
+                "weight": "5 litres",
+                "price": 2500
+              }
+            ]
+          },
+          {
+            "name": {
+              "en": "Coconut oil",
+              "ta": "தேங்காய் எண்ணெய்"
+            },
+            "variants": [
+              {
+                "weight": "200ml",
+                "price": null
+              },
+              {
+                "weight": "500ml",
+                "price": null
+              },
+              {
+                "weight": "1 litre",
+                "price": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": {
+          "en": "Healthy Flour Varieties",
+          "ta": "மாவு வகைகள்"
+        },
+        "products": [
+          {
+            "name": {
+              "en": "Health Mix",
+              "ta": "சத்துமாவு"
+            },
+            "variants": [
+              {
+                "weight": "200gm",
+                "price": 100
+              }
+            ]
+          },
+          {
+            "name": {
+              "en": "Ragi Flour",
+              "ta": "ராகி மாவு"
+            },
+            "variants": [
+              {
+                "weight": "500gm",
+                "price": 38
+              },
+              {
+                "weight": "1Kg",
+                "price": 70
+              }
+            ]
+          },
+          {
+            "name": {
+              "en": "Kambu Flour",
+              "ta": "கம்பு மாவு"
+            },
+            "variants": [
+              {
+                "weight": "500gm",
+                "price": 30
+              },
+              {
+                "weight": "1Kg",
+                "price": 60
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "company": {
+      "name": {
+        "en": "Sri Murughan Flour Mill India Pvt Ltd",
+        "ta": "ஸ்ரீ முருகன் மாவு மில் இந்தியா (பி) லிட்"
+      },
+      "tagline": {
+        "en": "Manufacturer & Marketer",
+        "ta": "உற்பத்தியாளர் & சந்தைப்படுத்துபவர்"
+      },
+      "address": "48/46, Nandhanam Street, Namakkal",
+      "phone": "721 721 1965",
+      "brandName": "Nalmanam",
+      "brandTagline": "100% Natural"
+    },
+    "page": {
+      "title": {
+        "en": "Price List",
+        "ta": "விலை பட்டியல்"
+      },
+      "footer": {
+        "en": "All special orders are accepted",
+        "ta": "அனைத்து வகையான ஆர்டர்களும் வரவேற்கப்படுகின்றன"
+      },
+      "connect": {
+        "en": "Connect with us",
+        "ta": "எங்களுடன் இணையுங்கள்"
+      }
+    }
+  }

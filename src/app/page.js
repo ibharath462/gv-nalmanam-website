@@ -79,7 +79,7 @@ export default function Home() {
                   <div className="relative rounded-lg overflow-hidden shadow-xl">
                     <div className="aspect-w-4 aspect-h-3 relative">
                       <Image
-                        src="/flour-mill.jpg"
+                        src="/images/manjal.jpg"
                         alt="Sri Murughan Flour Mill facility"
                         fill
                         className="object-cover"
@@ -121,7 +121,7 @@ export default function Home() {
                     preserve the true essence of each spice.
                   </p>
                   <Link
-                    href="/brand-story"
+                    href="/brand"
                     className="inline-flex items-center text-amber-800 font-medium hover:text-amber-600 transition-colors"
                   >
                     Discover our full story

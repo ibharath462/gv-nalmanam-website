@@ -28,21 +28,6 @@ const FloatingContact = () => {
 
   return (
     <div className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 flex flex-col gap-3 md:gap-4">
-      {/* Toggle Button */}
-      <button
-        onClick={() => setIsExpanded(!isExpanded)}
-        className="flex items-center justify-center w-14 h-14 md:w-14 md:h-14 bg-amber-700 text-white rounded-full shadow-lg shadow-amber-900/20 active:bg-amber-800 transition-all duration-300 hover:shadow-xl hover:shadow-amber-900/30 hover:scale-105 ml-auto"
-        aria-label={
-          isExpanded ? "Collapse contact options" : "Expand contact options"
-        }
-      >
-        {isExpanded ? (
-          <ChevronDown className="w-6 h-6 md:w-6 md:h-6" />
-        ) : (
-          <ChevronUp className="w-6 h-6 md:w-6 md:h-6" />
-        )}
-      </button>
-
       {/* Contact Buttons - Only visible when expanded */}
       <div
         className={`flex flex-col gap-3 md:gap-4 transition-all duration-300 origin-bottom-right 
@@ -132,7 +117,35 @@ const FloatingContact = () => {
         </button>
       </div>
 
-      
+      {/* Toggle Button - Moved to bottom */}
+      <button
+        onClick={() => setIsExpanded(!isExpanded)}
+        className="flex items-center justify-center w-14 h-14 md:w-14 md:h-14 bg-amber-700 text-white rounded-full shadow-lg shadow-amber-900/20 active:bg-amber-800 transition-all duration-300 hover:shadow-xl hover:shadow-amber-900/30 hover:scale-105 ml-auto"
+        aria-label={
+          isExpanded ? "Collapse contact options" : "Expand contact options"
+        }
+      >
+        {isExpanded ? (
+          <ChevronDown className="w-6 h-6 md:w-6 md:h-6" />
+        ) : (
+          <ChevronUp className="w-6 h-6 md:w-6 md:h-6" />
+        )}
+      </button>
+
+      {/* Add keyframes for the pulse animation */}
+      <style jsx global>{`
+        @keyframes pulse {
+          0% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.1);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+      `}</style>
     </div>
   );
 };
