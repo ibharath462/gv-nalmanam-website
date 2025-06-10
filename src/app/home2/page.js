@@ -59,22 +59,19 @@ export default function Home() {
 
           {/* About Section */}
           <section className="py-16 md:py-24 bg-white relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-green-50 to-transparent"></div>
-            <div className="absolute -top-10 -right-10 w-40 h-40 bg-green-100 rounded-full opacity-20"></div>
-            <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-green-100 rounded-full opacity-20"></div>
+            <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-amber-50 to-transparent"></div>
+            <div className="absolute -top-10 -right-10 w-40 h-40 bg-amber-100 rounded-full opacity-20"></div>
+            <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-amber-100 rounded-full opacity-20"></div>
 
             <div className="container mx-auto px-4">
               <div className="text-center mb-12 reveal fade-bottom">
-                <h2 className="text-sm font-medium text-green-700 uppercase tracking-wider mb-2">
+                <h2 className="text-sm font-medium text-amber-700 uppercase tracking-wider mb-2">
                   Our Legacy
                 </h2>
                 <h3 className="text-3xl md:text-4xl font-bold text-gray-900 font-serif">
                   The Sri Murughan Flour Mill Story
                 </h3>
-                <div
-                  className="w-24 h-1 bg-green-600 mx-auto mt-4"
-                  style={{ backgroundColor: "#CFE1CB" }}
-                ></div>
+                <div className="w-24 h-1 bg-amber-600 mx-auto mt-4"></div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -82,7 +79,7 @@ export default function Home() {
                   <div className="relative rounded-lg overflow-hidden shadow-xl">
                     <div className="aspect-w-4 aspect-h-3 relative">
                       <Image
-                        src="/images/fennel.jpg"
+                        src="/images/manjal.jpg"
                         alt="Sri Murughan Flour Mill facility"
                         fill
                         className="object-cover"
@@ -125,7 +122,7 @@ export default function Home() {
                   </p>
                   <Link
                     href="/brand"
-                    className="inline-flex items-center text-green-800 font-medium hover:text-green-600 transition-colors"
+                    className="inline-flex items-center text-amber-800 font-medium hover:text-amber-600 transition-colors"
                   >
                     Discover our full story
                     <ArrowRight size={16} className="ml-2" />
@@ -136,24 +133,18 @@ export default function Home() {
           </section>
 
           {/* Product Highlights */}
-          <section
-            className="py-16 md:py-24 relative"
-            style={{ backgroundColor: "#CFE1CB" }}
-          >
+          <section className="py-16 md:py-24 bg-amber-50/50 relative">
             <div className="absolute inset-0 bg-[url('/spice-pattern.png')] opacity-5 bg-repeat"></div>
 
             <div className="container mx-auto px-4 relative z-10">
               <div className="text-center mb-12 reveal fade-bottom">
-                <h2 className="text-sm font-medium text-green-700 uppercase tracking-wider mb-2">
+                <h2 className="text-sm font-medium text-amber-700 uppercase tracking-wider mb-2">
                   Our Products
                 </h2>
                 <h3 className="text-3xl md:text-4xl font-bold text-gray-900 font-serif">
                   Premium Masala Collection
                 </h3>
-                <div
-                  className="w-24 h-1 bg-green-600 mx-auto mt-4"
-                  style={{ backgroundColor: "#7a9d73" }}
-                ></div>
+                <div className="w-24 h-1 bg-amber-600 mx-auto mt-4"></div>
                 <p className="max-w-2xl mx-auto mt-4 text-gray-600">
                   Discover our range of traditional masalas, crafted with care
                   using age-old recipes and 100% natural ingredients.
@@ -171,10 +162,7 @@ export default function Home() {
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute top-4 left-4">
-                      <span
-                        className="text-white text-xs px-2 py-1 rounded-full"
-                        style={{ backgroundColor: "#7a9d73" }}
-                      >
+                      <span className="bg-amber-600 text-white text-xs px-2 py-1 rounded-full">
                         Best Seller
                       </span>
                     </div>
@@ -189,7 +177,7 @@ export default function Home() {
                           <Star
                             key={i}
                             size={14}
-                            className="text-yellow-500 fill-yellow-500"
+                            className="text-amber-500 fill-amber-500"
                           />
                         ))}
                       </div>
@@ -203,13 +191,12 @@ export default function Home() {
                       benefits to your dishes.
                     </p>
                     <div className="mt-4 flex justify-between items-center">
-                      <span className="text-green-800 font-bold">
+                      <span className="text-amber-800 font-bold">
                         Available in various sizes
                       </span>
                       <Link
                         href="/products/turmeric-powder"
-                        className="text-green-800 px-3 py-1 rounded-lg text-sm font-medium transition-colors hover:bg-green-100"
-                        style={{ backgroundColor: "#CFE1CB" }}
+                        className="bg-amber-100 hover:bg-amber-200 text-amber-800 px-3 py-1 rounded-lg text-sm font-medium transition-colors"
                       >
                         View Details
                       </Link>
@@ -239,8 +226,8 @@ export default function Home() {
                             size={14}
                             className={`${
                               i < 4
-                                ? "text-yellow-500 fill-yellow-500"
-                                : "text-yellow-300 fill-yellow-300"
+                                ? "text-amber-500 fill-amber-500"
+                                : "text-amber-300 fill-amber-300"
                             }`}
                           />
                         ))}
@@ -255,13 +242,12 @@ export default function Home() {
                       favorite dishes.
                     </p>
                     <div className="mt-4 flex justify-between items-center">
-                      <span className="text-green-800 font-bold">
+                      <span className="text-amber-800 font-bold">
                         Available in various sizes
                       </span>
                       <Link
                         href="/products/chilli-powder"
-                        className="text-green-800 px-3 py-1 rounded-lg text-sm font-medium transition-colors hover:bg-green-100"
-                        style={{ backgroundColor: "#CFE1CB" }}
+                        className="bg-amber-100 hover:bg-amber-200 text-amber-800 px-3 py-1 rounded-lg text-sm font-medium transition-colors"
                       >
                         View Details
                       </Link>
@@ -291,8 +277,8 @@ export default function Home() {
                             size={14}
                             className={`${
                               i < 5
-                                ? "text-yellow-500 fill-yellow-500"
-                                : "text-yellow-300 fill-yellow-300"
+                                ? "text-amber-500 fill-amber-500"
+                                : "text-amber-300 fill-amber-300"
                             }`}
                           />
                         ))}
@@ -307,13 +293,12 @@ export default function Home() {
                       culinary creations.
                     </p>
                     <div className="mt-4 flex justify-between items-center">
-                      <span className="text-green-800 font-bold">
+                      <span className="text-amber-800 font-bold">
                         Available in various sizes
                       </span>
                       <Link
                         href="/products/coriander-powder"
-                        className="text-green-800 px-3 py-1 rounded-lg text-sm font-medium transition-colors hover:bg-green-100"
-                        style={{ backgroundColor: "#CFE1CB" }}
+                        className="bg-amber-100 hover:bg-amber-200 text-amber-800 px-3 py-1 rounded-lg text-sm font-medium transition-colors"
                       >
                         View Details
                       </Link>
@@ -325,8 +310,9 @@ export default function Home() {
               <div className="text-center mt-12 reveal fade-bottom">
                 <Link
                   href="/products"
-                  className="text-white px-8 py-3 rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95 inline-flex items-center font-medium"
-                  style={{ backgroundColor: "#7a9d73" }}
+                  className="bg-gradient-to-r from-amber-800 to-amber-600 text-white px-8 py-3 rounded-lg
+                  transform transition-all duration-300 hover:scale-105 hover:shadow-lg 
+                  active:scale-95 inline-flex items-center font-medium"
                 >
                   Explore All Products
                   <ArrowRight size={18} className="ml-2" />
@@ -339,29 +325,20 @@ export default function Home() {
           <section className="py-16 md:py-24 bg-white">
             <div className="container mx-auto px-4">
               <div className="text-center mb-12 reveal fade-bottom">
-                <h2 className="text-sm font-medium text-green-700 uppercase tracking-wider mb-2">
+                <h2 className="text-sm font-medium text-amber-700 uppercase tracking-wider mb-2">
                   Why Choose Us
                 </h2>
                 <h3 className="text-3xl md:text-4xl font-bold text-gray-900 font-serif">
                   Our Commitment to Quality
                 </h3>
-                <div
-                  className="w-24 h-1 mx-auto mt-4"
-                  style={{ backgroundColor: "#CFE1CB" }}
-                ></div>
+                <div className="w-24 h-1 bg-amber-600 mx-auto mt-4"></div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {/* Feature 1 */}
-                <div
-                  className="p-6 rounded-lg border text-center reveal fade-up"
-                  style={{ backgroundColor: "#f8fdf8", borderColor: "#CFE1CB" }}
-                >
-                  <div
-                    className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-                    style={{ backgroundColor: "#CFE1CB" }}
-                  >
-                    <Leaf className="text-green-800" size={28} />
+                <div className="bg-amber-50/50 p-6 rounded-lg border border-amber-100 text-center reveal fade-up">
+                  <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Leaf className="text-amber-800" size={28} />
                   </div>
                   <h4 className="text-xl font-bold text-gray-900 font-serif mb-3">
                     100% Pure & Natural
@@ -373,15 +350,9 @@ export default function Home() {
                 </div>
 
                 {/* Feature 2 */}
-                <div
-                  className="p-6 rounded-lg border text-center reveal fade-up delay-100"
-                  style={{ backgroundColor: "#f8fdf8", borderColor: "#CFE1CB" }}
-                >
-                  <div
-                    className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-                    style={{ backgroundColor: "#CFE1CB" }}
-                  >
-                    <Shield className="text-green-800" size={28} />
+                <div className="bg-amber-50/50 p-6 rounded-lg border border-amber-100 text-center reveal fade-up delay-100">
+                  <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Shield className="text-amber-800" size={28} />
                   </div>
                   <h4 className="text-xl font-bold text-gray-900 font-serif mb-3">
                     No Preservatives
@@ -394,15 +365,9 @@ export default function Home() {
                 </div>
 
                 {/* Feature 3 */}
-                <div
-                  className="p-6 rounded-lg border text-center reveal fade-up delay-200"
-                  style={{ backgroundColor: "#f8fdf8", borderColor: "#CFE1CB" }}
-                >
-                  <div
-                    className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-                    style={{ backgroundColor: "#CFE1CB" }}
-                  >
-                    <Award className="text-green-800" size={28} />
+                <div className="bg-amber-50/50 p-6 rounded-lg border border-amber-100 text-center reveal fade-up delay-200">
+                  <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Award className="text-amber-800" size={28} />
                   </div>
                   <h4 className="text-xl font-bold text-gray-900 font-serif mb-3">
                     Traditional Process
@@ -415,15 +380,9 @@ export default function Home() {
                 </div>
 
                 {/* Feature 4 */}
-                <div
-                  className="p-6 rounded-lg border text-center reveal fade-up"
-                  style={{ backgroundColor: "#f8fdf8", borderColor: "#CFE1CB" }}
-                >
-                  <div
-                    className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-                    style={{ backgroundColor: "#CFE1CB" }}
-                  >
-                    <Users className="text-green-800" size={28} />
+                <div className="bg-amber-50/50 p-6 rounded-lg border border-amber-100 text-center reveal fade-up">
+                  <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Users className="text-amber-800" size={28} />
                   </div>
                   <h4 className="text-xl font-bold text-gray-900 font-serif mb-3">
                     Direct From Farmers
@@ -436,17 +395,11 @@ export default function Home() {
                 </div>
 
                 {/* Feature 5 */}
-                <div
-                  className="p-6 rounded-lg border text-center reveal fade-up delay-100"
-                  style={{ backgroundColor: "#f8fdf8", borderColor: "#CFE1CB" }}
-                >
-                  <div
-                    className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-                    style={{ backgroundColor: "#CFE1CB" }}
-                  >
+                <div className="bg-amber-50/50 p-6 rounded-lg border border-amber-100 text-center reveal fade-up delay-100">
+                  <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-7 w-7 text-green-800"
+                      className="h-7 w-7 text-amber-800"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -469,17 +422,11 @@ export default function Home() {
                 </div>
 
                 {/* Feature 6 */}
-                <div
-                  className="p-6 rounded-lg border text-center reveal fade-up delay-200"
-                  style={{ backgroundColor: "#f8fdf8", borderColor: "#CFE1CB" }}
-                >
-                  <div
-                    className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-                    style={{ backgroundColor: "#CFE1CB" }}
-                  >
+                <div className="bg-amber-50/50 p-6 rounded-lg border border-amber-100 text-center reveal fade-up delay-200">
+                  <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-7 w-7 text-green-800"
+                      className="h-7 w-7 text-amber-800"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -506,37 +453,28 @@ export default function Home() {
           </section>
 
           {/* Testimonials Section */}
-          <section
-            className="py-16 md:py-24 relative"
-            style={{ backgroundColor: "#f8fdf8" }}
-          >
+          <section className="py-16 md:py-24 bg-amber-50/70 relative">
             <div className="absolute inset-0 bg-[url('/spice-pattern.png')] opacity-5 bg-repeat"></div>
 
             <div className="container mx-auto px-4 relative z-10">
               <div className="text-center mb-12 reveal fade-bottom">
-                <h2 className="text-sm font-medium text-green-700 uppercase tracking-wider mb-2">
+                <h2 className="text-sm font-medium text-amber-700 uppercase tracking-wider mb-2">
                   Customer Love
                 </h2>
                 <h3 className="text-3xl md:text-4xl font-bold text-gray-900 font-serif">
                   What Our Customers Say
                 </h3>
-                <div
-                  className="w-24 h-1 mx-auto mt-4"
-                  style={{ backgroundColor: "#CFE1CB" }}
-                ></div>
+                <div className="w-24 h-1 bg-amber-600 mx-auto mt-4"></div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {/* Testimonial 1 */}
                 <div className="bg-white p-6 rounded-lg shadow-md relative reveal fade-up">
                   <div className="absolute -top-5 left-1/2 transform -translate-x-1/2">
-                    <div
-                      className="w-10 h-10 rounded-full flex items-center justify-center"
-                      style={{ backgroundColor: "#CFE1CB" }}
-                    >
+                    <div className="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6 text-green-800"
+                        className="h-6 w-6 text-amber-800"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -558,11 +496,8 @@ export default function Home() {
                       purity!"
                     </p>
                     <div className="flex items-center">
-                      <div
-                        className="w-10 h-10 rounded-full overflow-hidden mr-3"
-                        style={{ backgroundColor: "#CFE1CB" }}
-                      >
-                        <div className="w-full h-full flex items-center justify-center text-green-800 font-bold">
+                      <div className="w-10 h-10 bg-amber-100 rounded-full overflow-hidden mr-3">
+                        <div className="w-full h-full bg-amber-300 flex items-center justify-center text-amber-800 font-bold">
                           S
                         </div>
                       </div>
@@ -577,13 +512,10 @@ export default function Home() {
                 {/* Testimonial 2 */}
                 <div className="bg-white p-6 rounded-lg shadow-md relative reveal fade-up delay-100">
                   <div className="absolute -top-5 left-1/2 transform -translate-x-1/2">
-                    <div
-                      className="w-10 h-10 rounded-full flex items-center justify-center"
-                      style={{ backgroundColor: "#CFE1CB" }}
-                    >
+                    <div className="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6 text-green-800"
+                        className="h-6 w-6 text-amber-800"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -605,11 +537,8 @@ export default function Home() {
                       dishes."
                     </p>
                     <div className="flex items-center">
-                      <div
-                        className="w-10 h-10 rounded-full overflow-hidden mr-3"
-                        style={{ backgroundColor: "#CFE1CB" }}
-                      >
-                        <div className="w-full h-full flex items-center justify-center text-green-800 font-bold">
+                      <div className="w-10 h-10 bg-amber-100 rounded-full overflow-hidden mr-3">
+                        <div className="w-full h-full bg-amber-300 flex items-center justify-center text-amber-800 font-bold">
                           V
                         </div>
                       </div>
@@ -624,13 +553,10 @@ export default function Home() {
                 {/* Testimonial 3 */}
                 <div className="bg-white p-6 rounded-lg shadow-md relative reveal fade-up delay-200">
                   <div className="absolute -top-5 left-1/2 transform -translate-x-1/2">
-                    <div
-                      className="w-10 h-10 rounded-full flex items-center justify-center"
-                      style={{ backgroundColor: "#CFE1CB" }}
-                    >
+                    <div className="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6 text-green-800"
+                        className="h-6 w-6 text-amber-800"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -652,11 +578,8 @@ export default function Home() {
                       from additives."
                     </p>
                     <div className="flex items-center">
-                      <div
-                        className="w-10 h-10 rounded-full overflow-hidden mr-3"
-                        style={{ backgroundColor: "#CFE1CB" }}
-                      >
-                        <div className="w-full h-full flex items-center justify-center text-green-800 font-bold">
+                      <div className="w-10 h-10 bg-amber-100 rounded-full overflow-hidden mr-3">
+                        <div className="w-full h-full bg-amber-300 flex items-center justify-center text-amber-800 font-bold">
                           A
                         </div>
                       </div>
@@ -672,10 +595,7 @@ export default function Home() {
           </section>
 
           {/* CTA Section */}
-          <section
-            className="py-16 md:py-24 relative"
-            style={{ backgroundColor: "#7a9d73" }}
-          >
+          <section className="py-16 md:py-24 bg-amber-800 relative">
             <div className="absolute inset-0 bg-[url('/spice-pattern.png')] opacity-10 bg-repeat"></div>
 
             <div className="container mx-auto px-4 relative z-10">
@@ -683,7 +603,7 @@ export default function Home() {
                 <h2 className="text-3xl md:text-4xl font-bold font-serif mb-4 reveal fade-bottom">
                   Experience the Authentic Taste of Tradition
                 </h2>
-                <p className="text-green-100 mb-8 text-lg reveal fade-bottom delay-100">
+                <p className="text-amber-100 mb-8 text-lg reveal fade-bottom delay-100">
                   Join thousands of satisfied customers who have made Nalmanam a
                   part of their daily cooking rituals. Pure, natural, and
                   authentically crafted for your family.
@@ -691,8 +611,9 @@ export default function Home() {
                 <div className="flex flex-col sm:flex-row justify-center gap-4 reveal fade-bottom delay-200">
                   <Link
                     href="/products"
-                    className="bg-white px-8 py-3 rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95 inline-flex items-center justify-center font-medium text-base"
-                    style={{ color: "#7a9d73" }}
+                    className="bg-white text-amber-800 px-8 py-3 rounded-lg
+                    transform transition-all duration-300 hover:scale-105 hover:shadow-lg 
+                    active:scale-95 inline-flex items-center justify-center font-medium text-base"
                   >
                     Explore Products
                   </Link>
@@ -700,8 +621,9 @@ export default function Home() {
                     href="https://wa.me/918989191965"
                     target="_blank"
                     rel="noreferrer"
-                    className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg transform transition-all duration-300 hover:scale-105 hover:bg-white active:scale-95 inline-flex items-center justify-center font-medium text-base"
-                    style={{ "&:hover": { color: "#7a9d73" } }}
+                    className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg
+                    transform transition-all duration-300 hover:scale-105 hover:bg-white hover:text-amber-800 
+                    active:scale-95 inline-flex items-center justify-center font-medium text-base"
                   >
                     <svg
                       viewBox="0 0 24 24"

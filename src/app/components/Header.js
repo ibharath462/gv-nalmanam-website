@@ -46,10 +46,10 @@ const Header = () => {
                   className="h-10 md:h-12 mr-3"
                 />
                 <div className="flex flex-col">
-                  <span className="text-lg md:text-xl font-bold font-serif tracking-tight text-amber-800">
+                  <span className="text-lg md:text-xl font-bold font-serif tracking-tight text-green-800">
                     NALMANAM
                   </span>
-                  <span className="text-xs md:text-sm text-amber-600 font-medium">
+                  <span className="text-xs md:text-sm text-green-600 font-medium">
                     Premium Masala Products
                   </span>
                 </div>
@@ -57,19 +57,22 @@ const Header = () => {
             </Link>
 
             <button
-              className="md:hidden p-2 hover:bg-amber-50 rounded-lg transition-colors duration-300"
+              className="md:hidden p-2 rounded-lg transition-colors duration-300"
+              style={{
+                "&:hover": { backgroundColor: "rgba(207, 225, 203, 0.3)" },
+              }}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label="Toggle menu"
             >
               {isMenuOpen ? (
                 <X
                   size={24}
-                  className="text-amber-800 transition-transform duration-500 rotate-90"
+                  className="text-green-800 transition-transform duration-500 rotate-90"
                 />
               ) : (
                 <Menu
                   size={24}
-                  className="text-amber-800 transition-transform duration-500"
+                  className="text-green-800 transition-transform duration-500"
                 />
               )}
             </button>
@@ -79,12 +82,15 @@ const Header = () => {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-gray-800 hover:text-amber-800 font-medium transition-all duration-300 
+                  className="text-gray-800 hover:text-green-800 font-medium transition-all duration-300 
                   hover:scale-105 relative inline-flex items-center group px-2 font-serif"
                 >
                   {item.name}
                   {/* Animated underline effect */}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-700 transition-all duration-300 group-hover:w-full"></span>
+                  <span
+                    className="absolute -bottom-1 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full"
+                    style={{ backgroundColor: "#7a9d73" }}
+                  ></span>
                 </Link>
               ))}
 
@@ -92,9 +98,8 @@ const Header = () => {
                 href="https://wa.me/918989191965"
                 target="_blank"
                 rel="noreferrer"
-                className="bg-gradient-to-r from-amber-700 to-amber-500 text-white px-4 py-2 rounded-lg 
-                transform transition-all duration-300 hover:scale-105 hover:shadow-lg 
-                active:scale-95 flex items-center whitespace-nowrap font-medium"
+                className="text-white px-4 py-2 rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95 flex items-center whitespace-nowrap font-medium"
+                style={{ backgroundColor: "#7a9d73" }}
                 aria-label="Contact us on WhatsApp"
               >
                 <svg
@@ -121,7 +126,7 @@ const Header = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className="block py-2 text-gray-800 hover:text-amber-800 font-medium
+                className="block py-2 text-gray-800 hover:text-green-800 font-medium
                 transition-all duration-300"
                 style={{ transitionDelay: `${index * 50}ms` }}
                 onClick={() => setIsMenuOpen(false)}
@@ -135,9 +140,8 @@ const Header = () => {
                 href="https://wa.me/918989191965"
                 target="_blank"
                 rel="noreferrer"
-                className="block w-full bg-gradient-to-r from-amber-700 to-amber-500 text-white px-6 py-2 rounded-lg 
-                transform transition-all duration-300 hover:scale-105 hover:shadow-lg 
-                active:scale-95 text-center font-medium"
+                className="block w-full text-white px-6 py-2 rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95 text-center font-medium"
+                style={{ backgroundColor: "#7a9d73" }}
                 aria-label="Contact us on WhatsApp"
               >
                 <svg

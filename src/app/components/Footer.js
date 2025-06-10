@@ -8,17 +8,17 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-white border-t border-amber-100">
+    <footer className="bg-white border-t" style={{ borderColor: "#CFE1CB" }}>
       <div className="container mx-auto px-4 py-12">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           {/* Brand Column */}
           <div className="space-y-4">
             <div className="flex flex-col">
-              <h2 className="text-2xl font-bold text-amber-800 font-serif tracking-tight">
+              <h2 className="text-2xl font-bold text-green-800 font-serif tracking-tight">
                 NALMANAM
               </h2>
-              <p className="text-amber-600 text-sm">Premium Masala Products</p>
+              <p className="text-green-600 text-sm">Premium Masala Products</p>
             </div>
             <p className="text-gray-600 text-base leading-relaxed">
               Authentic spices procured from fresh farms of direct farmers,
@@ -28,14 +28,14 @@ const Footer = () => {
             <div className="flex flex-wrap gap-4">
               <Link
                 href="/products"
-                className="text-amber-800 hover:text-amber-600 transition-colors font-medium"
+                className="text-green-800 hover:text-green-600 transition-colors font-medium"
                 aria-label="Explore our products"
               >
                 Our Products
               </Link>
               <Link
                 href="/brand"
-                className="text-amber-800 hover:text-amber-600 transition-colors font-medium"
+                className="text-green-800 hover:text-green-600 transition-colors font-medium"
                 aria-label="Learn about our brand story"
               >
                 Brand Story
@@ -52,36 +52,48 @@ const Footer = () => {
               <li>
                 <Link
                   href="/"
-                  className="text-gray-600 hover:text-amber-800 transition-colors flex items-center group"
+                  className="text-gray-600 hover:text-green-800 transition-colors flex items-center group"
                 >
-                  <span className="inline-block w-0 group-hover:w-2 transition-all duration-300 h-0.5 bg-amber-700 mr-0 group-hover:mr-2"></span>
+                  <span
+                    className="inline-block w-0 group-hover:w-2 transition-all duration-300 h-0.5 mr-0 group-hover:mr-2"
+                    style={{ backgroundColor: "#7a9d73" }}
+                  ></span>
                   Home
                 </Link>
               </li>
               <li>
                 <Link
                   href="/products"
-                  className="text-gray-600 hover:text-amber-800 transition-colors flex items-center group"
+                  className="text-gray-600 hover:text-green-800 transition-colors flex items-center group"
                 >
-                  <span className="inline-block w-0 group-hover:w-2 transition-all duration-300 h-0.5 bg-amber-700 mr-0 group-hover:mr-2"></span>
+                  <span
+                    className="inline-block w-0 group-hover:w-2 transition-all duration-300 h-0.5 mr-0 group-hover:mr-2"
+                    style={{ backgroundColor: "#7a9d73" }}
+                  ></span>
                   Products
                 </Link>
               </li>
               <li>
                 <Link
                   href="/brand"
-                  className="text-gray-600 hover:text-amber-800 transition-colors flex items-center group"
+                  className="text-gray-600 hover:text-green-800 transition-colors flex items-center group"
                 >
-                  <span className="inline-block w-0 group-hover:w-2 transition-all duration-300 h-0.5 bg-amber-700 mr-0 group-hover:mr-2"></span>
+                  <span
+                    className="inline-block w-0 group-hover:w-2 transition-all duration-300 h-0.5 mr-0 group-hover:mr-2"
+                    style={{ backgroundColor: "#7a9d73" }}
+                  ></span>
                   Brand Story
                 </Link>
               </li>
               <li>
                 <Link
                   href="/contact"
-                  className="text-gray-600 hover:text-amber-800 transition-colors flex items-center group"
+                  className="text-gray-600 hover:text-green-800 transition-colors flex items-center group"
                 >
-                  <span className="inline-block w-0 group-hover:w-2 transition-all duration-300 h-0.5 bg-amber-700 mr-0 group-hover:mr-2"></span>
+                  <span
+                    className="inline-block w-0 group-hover:w-2 transition-all duration-300 h-0.5 mr-0 group-hover:mr-2"
+                    style={{ backgroundColor: "#7a9d73" }}
+                  ></span>
                   Contact Us
                 </Link>
               </li>
@@ -97,43 +109,55 @@ const Footer = () => {
               <li>
                 <Link
                   href="/products/turmeric-powder"
-                  className="text-gray-600 hover:text-amber-800 transition-colors flex items-center group"
+                  className="text-gray-600 hover:text-green-800 transition-colors flex items-center group"
                 >
-                  <span className="inline-block w-0 group-hover:w-2 transition-all duration-300 h-0.5 bg-amber-700 mr-0 group-hover:mr-2"></span>
+                  <span
+                    className="inline-block w-0 group-hover:w-2 transition-all duration-300 h-0.5 mr-0 group-hover:mr-2"
+                    style={{ backgroundColor: "#7a9d73" }}
+                  ></span>
                   Turmeric Powder
                 </Link>
               </li>
               <li>
                 <Link
                   href="/products/chilli-powder"
-                  className="text-gray-600 hover:text-amber-800 transition-colors flex items-center group"
+                  className="text-gray-600 hover:text-green-800 transition-colors flex items-center group"
                 >
-                  <span className="inline-block w-0 group-hover:w-2 transition-all duration-300 h-0.5 bg-amber-700 mr-0 group-hover:mr-2"></span>
+                  <span
+                    className="inline-block w-0 group-hover:w-2 transition-all duration-300 h-0.5 mr-0 group-hover:mr-2"
+                    style={{ backgroundColor: "#7a9d73" }}
+                  ></span>
                   Chilli Powder
                 </Link>
               </li>
               <li>
                 <Link
                   href="/products/coriander-powder"
-                  className="text-gray-600 hover:text-amber-800 transition-colors flex items-center group"
+                  className="text-gray-600 hover:text-green-800 transition-colors flex items-center group"
                 >
-                  <span className="inline-block w-0 group-hover:w-2 transition-all duration-300 h-0.5 bg-amber-700 mr-0 group-hover:mr-2"></span>
+                  <span
+                    className="inline-block w-0 group-hover:w-2 transition-all duration-300 h-0.5 mr-0 group-hover:mr-2"
+                    style={{ backgroundColor: "#7a9d73" }}
+                  ></span>
                   Coriander Powder
                 </Link>
               </li>
               <li>
                 <Link
                   href="/products/garam-masala"
-                  className="text-gray-600 hover:text-amber-800 transition-colors flex items-center group"
+                  className="text-gray-600 hover:text-green-800 transition-colors flex items-center group"
                 >
-                  <span className="inline-block w-0 group-hover:w-2 transition-all duration-300 h-0.5 bg-amber-700 mr-0 group-hover:mr-2"></span>
+                  <span
+                    className="inline-block w-0 group-hover:w-2 transition-all duration-300 h-0.5 mr-0 group-hover:mr-2"
+                    style={{ backgroundColor: "#7a9d73" }}
+                  ></span>
                   Garam Masala
                 </Link>
               </li>
               <li>
                 <Link
                   href="/products"
-                  className="text-amber-800 hover:text-amber-600 transition-colors font-medium flex items-center mt-2"
+                  className="text-green-800 hover:text-green-600 transition-colors font-medium flex items-center mt-2"
                 >
                   View All Products
                   <svg
@@ -160,20 +184,20 @@ const Footer = () => {
             </h3>
             <ul className="space-y-3">
               <li className="flex items-center space-x-3">
-                <Phone size={16} className="text-amber-800" />
+                <Phone size={16} className="text-green-800" />
                 <a
                   href="tel:+919566665153"
-                  className="text-gray-600 hover:text-amber-800 transition-colors"
+                  className="text-gray-600 hover:text-green-800 transition-colors"
                   aria-label="Call our customer service"
                 >
                   +91 9566 665 153
                 </a>
               </li>
               <li className="flex items-center space-x-3">
-                <Mail size={16} className="text-amber-800" />
+                <Mail size={16} className="text-green-800" />
                 <a
                   href="mailto:nalmanamstore@gmail.com"
-                  className="text-gray-600 hover:text-amber-800 transition-colors"
+                  className="text-gray-600 hover:text-green-800 transition-colors"
                   aria-label="Email us for inquiries"
                 >
                   nalmanamstore@gmail.com
@@ -182,7 +206,7 @@ const Footer = () => {
               <li className="flex items-start space-x-3">
                 <MapPin
                   size={16}
-                  className="text-amber-800 mt-1 flex-shrink-0"
+                  className="text-green-800 mt-1 flex-shrink-0"
                 />
                 <span className="text-gray-600">
                   48/46, Nandhanam Street, Namakkal, Tamil Nadu, India
@@ -194,9 +218,8 @@ const Footer = () => {
                 href="https://wa.me/918989191965"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center bg-gradient-to-r from-amber-800 to-amber-600 text-white px-4 py-2 rounded-lg 
-                transform transition-all duration-300 hover:scale-105 hover:shadow-lg 
-                active:scale-95 font-medium"
+                className="inline-flex items-center text-white px-4 py-2 rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95 font-medium"
+                style={{ backgroundColor: "#7a9d73" }}
                 aria-label="Contact us on WhatsApp"
               >
                 <svg
@@ -213,23 +236,32 @@ const Footer = () => {
         </div>
 
         {/* Feature Highlights */}
-        <div className="mt-12 pt-8 border-t border-amber-100">
+        <div className="mt-12 pt-8 border-t" style={{ borderColor: "#CFE1CB" }}>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             <div className="flex items-center space-x-3">
-              <div className="bg-amber-100 p-2 rounded-full">
-                <Leaf size={20} className="text-amber-800" />
+              <div
+                className="p-2 rounded-full"
+                style={{ backgroundColor: "#CFE1CB" }}
+              >
+                <Leaf size={20} className="text-green-800" />
               </div>
               <span className="text-gray-700">100% Pure & Natural</span>
             </div>
             <div className="flex items-center space-x-3">
-              <div className="bg-amber-100 p-2 rounded-full">
-                <Shield size={20} className="text-amber-800" />
+              <div
+                className="p-2 rounded-full"
+                style={{ backgroundColor: "#CFE1CB" }}
+              >
+                <Shield size={20} className="text-green-800" />
               </div>
               <span className="text-gray-700">No Added Preservatives</span>
             </div>
             <div className="flex items-center space-x-3">
-              <div className="bg-amber-100 p-2 rounded-full">
-                <Award size={20} className="text-amber-800" />
+              <div
+                className="p-2 rounded-full"
+                style={{ backgroundColor: "#CFE1CB" }}
+              >
+                <Award size={20} className="text-green-800" />
               </div>
               <span className="text-gray-700">
                 Traditional Home-made Process
@@ -248,21 +280,21 @@ const Footer = () => {
                 href="https://maps.app.goo.gl/HgEyiY2f3HXRMTqh9"
                 target="_blank"
                 rel="noreferrer"
-                className="text-gray-500 hover:text-amber-800 transition-colors text-sm"
+                className="text-gray-500 hover:text-green-800 transition-colors text-sm"
               >
                 Find Us
               </a>
               <span className="text-gray-400">•</span>
               <a
                 href="tel:+918989191965"
-                className="text-gray-500 hover:text-amber-800 transition-colors text-sm"
+                className="text-gray-500 hover:text-green-800 transition-colors text-sm"
               >
                 +91-8989 19 1965
               </a>
               <span className="text-gray-400">•</span>
               <a
                 href="mailto:nalmanamstore@gmail.com"
-                className="text-gray-500 hover:text-amber-800 transition-colors text-sm"
+                className="text-gray-500 hover:text-green-800 transition-colors text-sm"
               >
                 Email Us
               </a>
@@ -272,7 +304,10 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar with Social Media */}
-      <div className="bg-amber-50 py-4">
+      <div
+        className="py-4"
+        style={{ backgroundColor: "rgba(207, 225, 203, 0.3)" }}
+      >
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-gray-600 mb-4 md:mb-0">
@@ -283,7 +318,7 @@ const Footer = () => {
                 href="#"
                 target="_blank"
                 rel="noreferrer"
-                className="text-amber-800 hover:text-amber-600 transition-colors"
+                className="text-green-800 hover:text-green-600 transition-colors"
                 aria-label="Follow us on Facebook"
               >
                 <svg
@@ -298,7 +333,7 @@ const Footer = () => {
                 href="#"
                 target="_blank"
                 rel="noreferrer"
-                className="text-amber-800 hover:text-amber-600 transition-colors"
+                className="text-green-800 hover:text-green-600 transition-colors"
                 aria-label="Follow us on Instagram"
               >
                 <svg
@@ -313,7 +348,7 @@ const Footer = () => {
                 href="#"
                 target="_blank"
                 rel="noreferrer"
-                className="text-amber-800 hover:text-amber-600 transition-colors"
+                className="text-green-800 hover:text-green-600 transition-colors"
                 aria-label="Follow us on Twitter"
               >
                 <svg
@@ -328,7 +363,7 @@ const Footer = () => {
                 href="https://wa.me/918989191965"
                 target="_blank"
                 rel="noreferrer"
-                className="text-amber-800 hover:text-amber-600 transition-colors"
+                className="text-green-800 hover:text-green-600 transition-colors"
                 aria-label="Contact us on WhatsApp"
               >
                 <svg

@@ -147,8 +147,11 @@ const ProductsPage = () => {
     return (
       <div className="min-h-screen flex items-center justify-center bg-white">
         <div className="text-center">
-          <div className="w-16 h-16 border-4 border-amber-700 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
-          <p className="text-amber-800 font-medium">Loading products...</p>
+          <div
+            className="w-16 h-16 border-4 border-t-transparent rounded-full animate-spin mx-auto mb-4"
+            style={{ borderColor: "#7a9d73", borderTopColor: "transparent" }}
+          ></div>
+          <p className="text-green-800 font-medium">Loading products...</p>
         </div>
       </div>
     );
@@ -160,7 +163,13 @@ const ProductsPage = () => {
 
       {/* Hero Section */}
       <section className="relative pt-16 pb-12 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-amber-50 to-amber-100 z-0">
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            background:
+              "linear-gradient(to right, rgba(207, 225, 203, 0.3), rgba(207, 225, 203, 0.5))",
+          }}
+        >
           <div className="absolute inset-0 opacity-10 bg-pattern-herbs"></div>
         </div>
 
@@ -189,7 +198,7 @@ const ProductsPage = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-4xl md:text-5xl font-bold text-amber-800 mb-4"
+              className="text-4xl md:text-5xl font-bold text-green-800 mb-4"
             >
               {language === "en" ? "Our Products" : "எங்கள் தயாரிப்புகள்"}
             </motion.h1>
@@ -210,7 +219,11 @@ const ProductsPage = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
               onClick={toggleLanguage}
-              className="px-6 py-2 bg-amber-700 text-white rounded-full hover:bg-amber-800 transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105 active:scale-95"
+              className="px-6 py-2 text-white rounded-full transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105 active:scale-95"
+              style={{
+                backgroundColor: "#7a9d73",
+                "&:hover": { backgroundColor: "#6b8a66" },
+              }}
             >
               {language === "en" ? "தமிழில் காட்டு" : "Show in English"}
             </motion.button>
@@ -227,7 +240,8 @@ const ProductsPage = () => {
       >
         <button
           onClick={() => setShowCategoryMenu(!showCategoryMenu)}
-          className="w-14 h-14 rounded-full bg-amber-700 text-white shadow-lg flex items-center justify-center"
+          className="w-14 h-14 rounded-full text-white shadow-lg flex items-center justify-center"
+          style={{ backgroundColor: "#7a9d73" }}
           aria-label="Toggle category menu"
         >
           {showCategoryMenu ? <BookOpen size={24} /> : <Book size={24} />}
@@ -273,10 +287,10 @@ const ProductsPage = () => {
                       setShowCategoryMenu(false);
                     }}
                     className={`w-full text-left px-5 py-4 flex items-center space-x-4 transition-colors ${
-                      index === 0 ? "bg-amber-50" : ""
+                      index === 0 ? "bg-green-50" : ""
                     } ${
                       activeCategory === category.name[language]
-                        ? "bg-amber-50"
+                        ? "bg-green-50"
                         : "bg-white hover:bg-gray-50"
                     } ${
                       index < productsData.categories.length - 1
@@ -285,7 +299,7 @@ const ProductsPage = () => {
                     }`}
                   >
                     {/* Category Icon based on index */}
-                    <span className="text-amber-700 flex-shrink-0">
+                    <span className="text-green-700 flex-shrink-0">
                       {index === 0 ? (
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -369,7 +383,7 @@ const ProductsPage = () => {
                       )}
                     </span>
                     <span
-                      className={`text-amber-900 ${
+                      className={`text-green-900 ${
                         activeCategory === category.name[language]
                           ? "font-bold"
                           : "font-medium"
@@ -386,7 +400,10 @@ const ProductsPage = () => {
       )}
 
       {/* Desktop Category Navigation */}
-      <section className="hidden md:block py-6 bg-amber-50 sticky top-16 z-20 shadow-md">
+      <section
+        className="hidden md:block py-6 sticky top-16 z-20 shadow-md"
+        style={{ backgroundColor: "rgba(207, 225, 203, 0.3)" }}
+      >
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap items-center justify-center gap-3 md:gap-5">
             {productsData.categories &&
@@ -396,9 +413,15 @@ const ProductsPage = () => {
                   onClick={() => handleCategoryChange(category.name[language])}
                   className={`px-4 py-2 rounded-full text-sm md:text-base whitespace-nowrap transition-all duration-300 ${
                     activeCategory === category.name[language]
-                      ? "bg-amber-700 text-white shadow-md"
-                      : "bg-white text-amber-800 hover:bg-amber-100"
+                      ? "text-white shadow-md"
+                      : "bg-white text-green-800 hover:bg-green-100"
                   }`}
+                  style={{
+                    backgroundColor:
+                      activeCategory === category.name[language]
+                        ? "#7a9d73"
+                        : "",
+                  }}
                 >
                   {category.name[language]}
                 </button>
@@ -425,9 +448,12 @@ const ProductsPage = () => {
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5 }}
-                  className="text-3xl font-bold text-amber-800 mb-8 text-center md:text-left flex items-center justify-center md:justify-start"
+                  className="text-3xl font-bold text-green-800 mb-8 text-center md:text-left flex items-center justify-center md:justify-start"
                 >
-                  <span className="bg-amber-700 h-8 w-2 mr-3 rounded hidden md:block"></span>
+                  <span
+                    className="h-8 w-2 mr-3 rounded hidden md:block"
+                    style={{ backgroundColor: "#7a9d73" }}
+                  ></span>
                   {category.name[language]}
                 </motion.h2>
 
@@ -442,91 +468,72 @@ const ProductsPage = () => {
                       <motion.div
                         key={productIndex}
                         variants={itemVariants}
-                        className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100"
+                        className="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300 border border-gray-200 group"
                       >
                         {/* Product Image */}
-                        <div className="relative h-48 overflow-hidden bg-amber-50">
+                        <div
+                          className="relative h-64 overflow-hidden"
+                          style={{
+                            backgroundColor: "rgba(207, 225, 203, 0.1)",
+                          }}
+                        >
                           <Image
                             src={product.image || "/images/pepper.jpg"}
                             alt={product.name[language]}
                             layout="fill"
                             objectFit="cover"
-                            className="transition-transform duration-500 hover:scale-110"
+                            className="transition-transform duration-700 group-hover:scale-105"
                             onError={(e) => {
                               e.target.src = `/images/pepper.jpg`; // Fallback image
                             }}
                           />
-                          {/* Label for 100% Natural */}
-                          {/* <div className="absolute top-2 left-2 bg-green-100 text-green-800 text-xs font-medium px-2 py-1 rounded-full">
-                            100% Natural
-                          </div> */}
+                          {/* Quality Badge */}
+                          <div className="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-green-700 text-xs font-medium px-2 py-1 rounded-full border border-green-200">
+                            {language === "en" ? "100% Pure" : "100% தூய"}
+                          </div>
+                          {/* Info Button */}
+                          <button
+                            className="absolute top-3 right-3 w-8 h-8 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center text-green-700 hover:text-green-900 hover:bg-white transition-all duration-200"
+                            aria-label="Product information"
+                            onClick={() => showProductInfo(product)}
+                          >
+                            <Info size={16} />
+                          </button>
                         </div>
 
-                        <div className="p-5">
+                        <div className="p-6">
                           <div className="mb-4">
-                            <div className="flex justify-between items-start">
-                              <h3 className="text-xl font-semibold text-amber-900">
-                                {product.name[language]}
-                              </h3>
-                              <button
-                                className="text-amber-700 hover:text-amber-900"
-                                aria-label="Product information"
-                                onClick={() => showProductInfo(product)}
-                              >
-                                <Info size={18} />
-                              </button>
-                            </div>
-                            <p className="text-gray-600 text-sm mt-1">
+                            <h3 className="text-lg font-semibold text-gray-900 mb-1">
+                              {product.name[language]}
+                            </h3>
+                            <p className="text-gray-500 text-sm">
                               {language === "en"
                                 ? "Traditional home-made process"
                                 : "பாரம்பரிய முறையில் தயாரிக்கப்பட்டது"}
                             </p>
                           </div>
 
-                          {product.variants && product.variants.length > 0 ? (
-                            <div className="mt-4">
-                              <div className="text-sm text-gray-500 mb-2">
-                                {language === "en"
-                                  ? "Available sizes"
-                                  : "கிடைக்கும் அளவுகள்"}
-                              </div>
-                              <div className="flex flex-wrap gap-2">
-                                {product.variants.map(
-                                  (variant, variantIndex) => (
-                                    <div
-                                      key={variantIndex}
-                                      className="border border-amber-200 rounded-md px-3 py-1 text-amber-800 bg-amber-50 text-sm flex justify-between items-center min-w-24"
-                                    >
-                                      <span>{variant.weight}</span>
-                                      <span className="font-semibold ml-2">
-                                        {variant.price
-                                          ? `₹${variant.price}`
-                                          : "Price on request"}
-                                      </span>
-                                    </div>
-                                  )
-                                )}
-                              </div>
-                            </div>
-                          ) : (
-                            <p className="text-gray-500 italic mt-4">
-                              {language === "en"
-                                ? "Price on request"
-                                : "விலை கேட்டறிய"}
+                          {/* <div className="mb-6">
+                            <p className="text-2xl font-bold text-gray-900">
+                              {language === "en" ? "Best Price" : "சிறந்த விலை"}
                             </p>
-                          )}
+                            <p className="text-sm text-gray-500 mt-1">
+                              {language === "en"
+                                ? "Contact for current rates"
+                                : "தற்போதைய விலைக்கு தொடர்பு கொள்ளவும்"}
+                            </p>
+                          </div> */}
 
-                          <div className="mt-5 pt-4 border-t border-gray-100 flex justify-center">
-                            <button
-                              className="flex items-center text-white bg-amber-700 hover:bg-amber-800 px-3 py-2 rounded-md transition-colors duration-300 w-full justify-center"
-                              onClick={() => handleOrderClick(product)}
-                            >
-                              <ShoppingBag size={16} className="mr-1" />
-                              <span>
-                                {language === "en" ? "Order Now" : "ஆர்டர்"}
-                              </span>
-                            </button>
-                          </div>
+                          <button
+                            className="w-full flex items-center justify-center text-white py-3 px-4 rounded-lg font-medium transition-all duration-200 hover:shadow-md active:scale-[0.98]"
+                            style={{ backgroundColor: "#7a9d73" }}
+                            onClick={() => handleOrderClick(product)}
+                          >
+                            <ShoppingBag size={18} className="mr-2" />
+                            <span>
+                              {language === "en" ? "Order Now" : "ஆர்டர்"}
+                            </span>
+                          </button>
                         </div>
                       </motion.div>
                     ))}
@@ -554,13 +561,13 @@ const ProductsPage = () => {
               <X size={24} />
             </button>
 
-            <h3 className="text-2xl font-bold text-amber-800 mb-4">
+            <h3 className="text-2xl font-bold text-green-800 mb-4">
               {selectedProductInfo.name[language]}
             </h3>
 
             {selectedProductInfo.description && (
               <div className="mb-4">
-                <h4 className="font-semibold text-amber-700 mb-2">
+                <h4 className="font-semibold text-green-700 mb-2">
                   {language === "en" ? "Description" : "விளக்கம்"}
                 </h4>
                 <p className="text-gray-700">
@@ -571,7 +578,7 @@ const ProductsPage = () => {
 
             {selectedProductInfo.benefits && (
               <div className="mb-4">
-                <h4 className="font-semibold text-amber-700 mb-2">
+                <h4 className="font-semibold text-green-700 mb-2">
                   {language === "en" ? "Benefits" : "நன்மைகள்"}
                 </h4>
                 <ul className="text-gray-700 list-disc pl-5 space-y-1">
@@ -586,7 +593,7 @@ const ProductsPage = () => {
 
             {selectedProductInfo.usage && (
               <div className="mb-4">
-                <h4 className="font-semibold text-amber-700 mb-2">
+                <h4 className="font-semibold text-green-700 mb-2">
                   {language === "en" ? "How to Use" : "பயன்படுத்தும் முறை"}
                 </h4>
                 <p className="text-gray-700">
@@ -597,7 +604,11 @@ const ProductsPage = () => {
 
             <div className="mt-6">
               <button
-                className="w-full flex items-center justify-center text-white bg-amber-700 hover:bg-amber-800 px-4 py-2 rounded-md transition-colors duration-300"
+                className="w-full flex items-center justify-center text-white px-4 py-2 rounded-md transition-colors duration-300"
+                style={{
+                  backgroundColor: "#7a9d73",
+                  "&:hover": { backgroundColor: "#6b8a66" },
+                }}
                 onClick={() => {
                   handleOrderClick(selectedProductInfo);
                   closeProductInfo();
@@ -612,10 +623,13 @@ const ProductsPage = () => {
       )}
 
       {/* Special Note */}
-      <section className="py-8 bg-amber-100">
+      <section
+        className="py-8"
+        style={{ backgroundColor: "rgba(207, 225, 203, 0.5)" }}
+      >
         <div className="container mx-auto px-4 text-center">
           {productsData.page && productsData.page.footer && (
-            <p className="text-amber-900 font-medium text-lg">
+            <p className="text-green-900 font-medium text-lg">
               {language === "en"
                 ? productsData.page.footer.en
                 : productsData.page.footer.ta}
@@ -623,7 +637,7 @@ const ProductsPage = () => {
           )}
 
           {productsData.page && productsData.page.connect && (
-            <h3 className="mt-4 text-2xl font-bold text-amber-800">
+            <h3 className="mt-4 text-2xl font-bold text-green-800">
               {language === "en"
                 ? productsData.page.connect.en
                 : productsData.page.connect.ta}

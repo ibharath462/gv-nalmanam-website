@@ -47,13 +47,19 @@ const HeroSection = () => {
       {/* Decorative background patterns */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute inset-0 bg-[url('/images/art2.jpg')] opacity-5 bg-repeat"></div>
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-amber-50 to-transparent"></div>
-        <div className="absolute bottom-0 left-0 w-1/3 h-1/2 bg-gradient-to-t from-amber-50/50 to-transparent"></div>
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-green-50 to-transparent"></div>
+        <div className="absolute bottom-0 left-0 w-1/3 h-1/2 bg-gradient-to-t from-green-50/50 to-transparent"></div>
       </div>
 
       {/* Floating spice elements */}
-      <div className="absolute top-1/4 left-10 w-12 h-12 rounded-full bg-amber-500/10 animate-float-slow hidden md:block"></div>
-      <div className="absolute bottom-1/4 right-10 w-16 h-16 rounded-full bg-amber-800/10 animate-float-delayed hidden md:block"></div>
+      <div
+        className="absolute top-1/4 left-10 w-12 h-12 rounded-full animate-float-slow hidden md:block"
+        style={{ backgroundColor: "rgba(207, 225, 203, 0.3)" }}
+      ></div>
+      <div
+        className="absolute bottom-1/4 right-10 w-16 h-16 rounded-full animate-float-delayed hidden md:block"
+        style={{ backgroundColor: "rgba(122, 157, 115, 0.2)" }}
+      ></div>
       <div className="absolute top-1/3 right-1/4 w-8 h-8 rounded-full bg-red-600/10 animate-float-reverse hidden md:block"></div>
 
       <div className="container mx-auto px-4 py-16 md:py-24 relative z-10">
@@ -69,7 +75,7 @@ const HeroSection = () => {
                 }`}
                 style={{ display: index === currentSlide ? "block" : "none" }}
               >
-                <h2 className="font-serif text-amber-700 text-sm md:text-base tracking-wider uppercase mb-2 animate-fadeIn">
+                <h2 className="font-serif text-green-700 text-sm md:text-base tracking-wider uppercase mb-2 animate-fadeIn">
                   {content.subtitle}
                 </h2>
                 <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 font-serif leading-tight animate-slideUp">
@@ -81,9 +87,8 @@ const HeroSection = () => {
                 <div className="flex flex-wrap gap-4 animate-fadeIn delay-500">
                   <Link
                     href={content.ctaLink}
-                    className="bg-gradient-to-r from-amber-800 to-amber-600 text-white px-6 py-3 rounded-lg
-                    transform transition-all duration-300 hover:scale-105 hover:shadow-lg 
-                    active:scale-95 font-medium text-base inline-flex items-center"
+                    className="text-white px-6 py-3 rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95 font-medium text-base inline-flex items-center"
+                    style={{ backgroundColor: "#7a9d73" }}
                   >
                     {content.cta}
                     <svg
@@ -103,9 +108,11 @@ const HeroSection = () => {
                     href="https://wa.me/918989191965"
                     target="_blank"
                     rel="noreferrer"
-                    className="border-2 border-amber-700 text-amber-800 px-6 py-2.5 rounded-lg
-                    hover:bg-amber-700 hover:text-white transform transition-all duration-300 
-                    hover:scale-105 active:scale-95 font-medium text-base inline-flex items-center"
+                    className="border-2 text-green-800 px-6 py-2.5 rounded-lg hover:text-white transform transition-all duration-300 hover:scale-105 active:scale-95 font-medium text-base inline-flex items-center"
+                    style={{
+                      borderColor: "#7a9d73",
+                      "&:hover": { backgroundColor: "#7a9d73" },
+                    }}
                   >
                     <svg
                       viewBox="0 0 24 24"
@@ -127,7 +134,10 @@ const HeroSection = () => {
               <div className="relative w-full max-w-md">
                 {/* Main product image with glow */}
                 <div className="relative mx-auto w-64 h-64 md:w-80 md:h-80 animate-float">
-                  <div className="absolute w-full h-full rounded-full bg-amber-100/80 opacity-70 blur-xl"></div>
+                  <div
+                    className="absolute w-full h-full rounded-full opacity-70 blur-xl"
+                    style={{ backgroundColor: "rgba(207, 225, 203, 0.8)" }}
+                  ></div>
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="relative w-48 h-48 md:w-64 md:h-64">
                       <Image
@@ -141,12 +151,15 @@ const HeroSection = () => {
                 </div>
 
                 {/* Brand logo overlay */}
-                <div className="absolute top-0 right-0 md:top-5 md:right-5 bg-white/90 rounded-lg p-3 shadow-md border border-amber-100 animate-fadeIn delay-700">
+                <div
+                  className="absolute top-0 right-0 md:top-5 md:right-5 bg-white/90 rounded-lg p-3 shadow-md border animate-fadeIn delay-700"
+                  style={{ borderColor: "#CFE1CB" }}
+                >
                   <div className="flex flex-col items-center">
                     <h3 className="text-sm font-medium text-gray-500">
                       A brand of
                     </h3>
-                    <p className="text-amber-800 font-bold font-serif">
+                    <p className="text-green-800 font-bold font-serif">
                       Sri Murughan Flour Mill
                     </p>
                   </div>
@@ -154,12 +167,24 @@ const HeroSection = () => {
 
                 {/* Quality badges */}
                 <div className="absolute bottom-0 left-0 md:bottom-5 md:left-5 flex flex-col gap-2 animate-fadeIn delay-800">
-                  <div className="bg-white/90 rounded-full px-3 py-1 text-xs font-medium text-amber-800 border border-amber-100 shadow-sm flex items-center">
-                    <span className="w-2 h-2 bg-amber-500 rounded-full mr-2"></span>
+                  <div
+                    className="bg-white/90 rounded-full px-3 py-1 text-xs font-medium text-green-800 border shadow-sm flex items-center"
+                    style={{ borderColor: "#CFE1CB" }}
+                  >
+                    <span
+                      className="w-2 h-2 rounded-full mr-2"
+                      style={{ backgroundColor: "#7a9d73" }}
+                    ></span>
                     100% Natural
                   </div>
-                  <div className="bg-white/90 rounded-full px-3 py-1 text-xs font-medium text-amber-800 border border-amber-100 shadow-sm flex items-center">
-                    <span className="w-2 h-2 bg-amber-500 rounded-full mr-2"></span>
+                  <div
+                    className="bg-white/90 rounded-full px-3 py-1 text-xs font-medium text-green-800 border shadow-sm flex items-center"
+                    style={{ borderColor: "#CFE1CB" }}
+                  >
+                    <span
+                      className="w-2 h-2 rounded-full mr-2"
+                      style={{ backgroundColor: "#7a9d73" }}
+                    ></span>
                     No Preservatives
                   </div>
                 </div>
@@ -175,8 +200,11 @@ const HeroSection = () => {
               key={index}
               onClick={() => setCurrentSlide(index)}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                index === currentSlide ? "bg-amber-700 w-8" : "bg-amber-300"
+                index === currentSlide ? "w-8" : ""
               }`}
+              style={{
+                backgroundColor: index === currentSlide ? "#7a9d73" : "#CFE1CB",
+              }}
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
@@ -184,25 +212,40 @@ const HeroSection = () => {
       </div>
 
       {/* Features highlight */}
-      <div className="relative z-10 border-t border-amber-100">
+      <div
+        className="relative z-10 border-t"
+        style={{ borderColor: "#CFE1CB" }}
+      >
         <div className="container mx-auto px-4 py-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-            <div className="bg-amber-50/50 rounded-lg p-4 backdrop-blur-sm">
-              <div className="font-serif text-amber-800 font-bold mb-1">
+            <div
+              className="rounded-lg p-4 backdrop-blur-sm"
+              style={{ backgroundColor: "rgba(207, 225, 203, 0.3)" }}
+            >
+              <div className="font-serif text-green-800 font-bold mb-1">
                 100%
               </div>
               <div className="text-sm text-gray-700">Pure & Natural</div>
             </div>
-            <div className="bg-amber-50/50 rounded-lg p-4 backdrop-blur-sm">
-              <div className="font-serif text-amber-800 font-bold mb-1">0%</div>
+            <div
+              className="rounded-lg p-4 backdrop-blur-sm"
+              style={{ backgroundColor: "rgba(207, 225, 203, 0.3)" }}
+            >
+              <div className="font-serif text-green-800 font-bold mb-1">0%</div>
               <div className="text-sm text-gray-700">Artificial Colors</div>
             </div>
-            <div className="bg-amber-50/50 rounded-lg p-4 backdrop-blur-sm">
-              <div className="font-serif text-amber-800 font-bold mb-1">0%</div>
+            <div
+              className="rounded-lg p-4 backdrop-blur-sm"
+              style={{ backgroundColor: "rgba(207, 225, 203, 0.3)" }}
+            >
+              <div className="font-serif text-green-800 font-bold mb-1">0%</div>
               <div className="text-sm text-gray-700">Preservatives</div>
             </div>
-            <div className="bg-amber-50/50 rounded-lg p-4 backdrop-blur-sm">
-              <div className="font-serif text-amber-800 font-bold mb-1">
+            <div
+              className="rounded-lg p-4 backdrop-blur-sm"
+              style={{ backgroundColor: "rgba(207, 225, 203, 0.3)" }}
+            >
+              <div className="font-serif text-green-800 font-bold mb-1">
                 Since
               </div>
               <div className="text-sm text-gray-700">1965</div>

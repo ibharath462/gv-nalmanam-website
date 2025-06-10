@@ -107,34 +107,157 @@ export default function BrandStory() {
       <Header />
 
       <main className="flex-grow">
-        {/* Hero Section */}
+        {/* Hero Section with Grandmother Illustration */}
         <section
           ref={heroRef}
-          className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-amber-900 text-white"
+          className="relative min-h-[70vh] flex items-center justify-center overflow-hidden text-white"
+          style={{
+            background: "linear-gradient(135deg, #7a9d73 0%, #6b8a66 100%)",
+          }}
         >
-          {/* Parallax Background */}
+          {/* Organic Background with Grandmother Cooking Illustration */}
           <div className="absolute inset-0 z-0 overflow-hidden">
-            <div className="absolute inset-0 bg-[url('/spice-pattern.png')] opacity-10 bg-repeat parallax-bg"></div>
-            <div className="absolute inset-0 bg-gradient-to-r from-amber-950/80 to-amber-800/80"></div>
+            <div
+              className="absolute inset-0 opacity-10 bg-repeat parallax-bg"
+              style={{ backgroundImage: 'url("/spice-pattern.png")' }}
+            ></div>
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  "linear-gradient(to right, rgba(122, 157, 115, 0.9), rgba(107, 138, 102, 0.8))",
+              }}
+            ></div>
+            {/* Grandmother Cooking SVG Illustration */}
+            <div className="absolute bottom-0 left-0 w-full h-full flex items-end">
+              <svg viewBox="0 0 1200 400" className="w-full h-auto opacity-20">
+                {/* Kitchen Counter */}
+                <rect
+                  x="0"
+                  y="320"
+                  width="400"
+                  height="80"
+                  fill="#8B4513"
+                  opacity="0.7"
+                />
+                {/* Grandmother Figure */}
+                <g transform="translate(80, 180)">
+                  {/* Body */}
+                  <ellipse cx="50" cy="80" rx="35" ry="45" fill="#D2691E" />
+                  {/* Head */}
+                  <circle cx="50" cy="30" r="20" fill="#F4A460" />
+                  {/* Hair */}
+                  <path
+                    d="M30 25 Q50 10 70 25 Q65 15 50 15 Q35 15 30 25"
+                    fill="#C0C0C0"
+                  />
+                  {/* Arms */}
+                  <ellipse
+                    cx="30"
+                    cy="60"
+                    rx="8"
+                    ry="25"
+                    fill="#F4A460"
+                    transform="rotate(-20 30 60)"
+                  />
+                  <ellipse
+                    cx="70"
+                    cy="60"
+                    rx="8"
+                    ry="25"
+                    fill="#F4A460"
+                    transform="rotate(20 70 60)"
+                  />
+                  {/* Hands holding spoon */}
+                  <circle cx="25" cy="75" r="5" fill="#F4A460" />
+                  <circle cx="75" cy="75" r="5" fill="#F4A460" />
+                  <line
+                    x1="20"
+                    y1="75"
+                    x2="10"
+                    y2="85"
+                    stroke="#8B4513"
+                    strokeWidth="2"
+                  />
+                </g>
+                {/* Cooking Pot */}
+                <ellipse cx="200" cy="300" rx="30" ry="15" fill="#4A4A4A" />
+                <rect x="170" y="285" width="60" height="20" fill="#4A4A4A" />
+                {/* Steam */}
+                <path
+                  d="M190 280 Q185 270 190 260 Q195 250 190 240"
+                  stroke="white"
+                  strokeWidth="2"
+                  fill="none"
+                  opacity="0.6"
+                />
+                <path
+                  d="M200 280 Q205 270 200 260 Q195 250 200 240"
+                  stroke="white"
+                  strokeWidth="2"
+                  fill="none"
+                  opacity="0.6"
+                />
+                <path
+                  d="M210 280 Q215 270 210 260 Q205 250 210 240"
+                  stroke="white"
+                  strokeWidth="2"
+                  fill="none"
+                  opacity="0.6"
+                />
+                {/* Spice Jars */}
+                <rect
+                  x="300"
+                  y="290"
+                  width="15"
+                  height="25"
+                  fill="#DEB887"
+                  rx="2"
+                />
+                <rect
+                  x="320"
+                  y="285"
+                  width="15"
+                  height="30"
+                  fill="#CD853F"
+                  rx="2"
+                />
+                <rect
+                  x="340"
+                  y="292"
+                  width="15"
+                  height="23"
+                  fill="#F4A460"
+                  rx="2"
+                />
+                {/* Decorative Spices */}
+                <circle cx="450" cy="300" r="3" fill="#FF6347" />
+                <circle cx="460" cy="295" r="2" fill="#FFD700" />
+                <circle cx="470" cy="302" r="2.5" fill="#32CD32" />
+              </svg>
+            </div>
           </div>
 
           <div className="container mx-auto px-4 py-16 md:py-24 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-amber-300 text-sm md:text-base uppercase tracking-widest mb-4 hero-content">
+              <h2 className="text-green-200 text-sm md:text-base uppercase tracking-widest mb-4 hero-content">
                 Our Journey Since 1965
               </h2>
               <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6 hero-content">
                 Sri Murughan Flour Mill Legacy
               </h1>
-              <div className="w-24 h-1 bg-amber-500 mx-auto mb-8 hero-content"></div>
-              <p className="text-xl md:text-2xl text-amber-100 mb-8 hero-content">
+              <div
+                className="w-24 h-1 mx-auto mb-8 hero-content"
+                style={{ backgroundColor: "#CFE1CB" }}
+              ></div>
+              <p className="text-xl md:text-2xl text-green-100 mb-8 hero-content">
                 A story of tradition, quality, and the pursuit of authentic
                 flavors
               </p>
               <div className="hero-content">
                 <a
                   href="#timeline"
-                  className="inline-flex items-center text-amber-300 hover:text-amber-200 transition-colors"
+                  className="inline-flex items-center text-green-200 hover:text-green-100 transition-colors"
                 >
                   Explore Our Journey
                   <ChevronDown className="ml-2 animate-bounce" size={20} />
@@ -161,7 +284,7 @@ export default function BrandStory() {
                     </div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent/0 flex items-end">
                       <div className="p-4">
-                        <p className="text-amber-200 text-sm">Founder</p>
+                        <p className="text-green-200 text-sm">Founder</p>
                         <h4 className="text-white text-xl font-bold">
                           Sri M. Murughan
                         </h4>
@@ -170,7 +293,7 @@ export default function BrandStory() {
                   </div>
                 </div>
                 <div className="md:col-span-7">
-                  <h2 className="text-3xl md:text-4xl font-serif font-bold text-amber-800 mb-6">
+                  <h2 className="text-3xl md:text-4xl font-serif font-bold text-green-800 mb-6">
                     A Heritage of Excellence
                   </h2>
                   <p className="text-gray-700 mb-4 leading-relaxed">
@@ -189,8 +312,11 @@ export default function BrandStory() {
                   </p>
                   <div className="flex flex-wrap gap-6">
                     <div className="flex items-center">
-                      <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mr-3">
-                        <Calendar className="text-amber-800" size={24} />
+                      <div
+                        className="w-12 h-12 rounded-full flex items-center justify-center mr-3"
+                        style={{ backgroundColor: "#CFE1CB" }}
+                      >
+                        <Calendar className="text-green-800" size={24} />
                       </div>
                       <div>
                         <p className="text-gray-900 font-bold">Est. 1965</p>
@@ -198,8 +324,11 @@ export default function BrandStory() {
                       </div>
                     </div>
                     <div className="flex items-center">
-                      <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mr-3">
-                        <Star className="text-amber-800" size={24} />
+                      <div
+                        className="w-12 h-12 rounded-full flex items-center justify-center mr-3"
+                        style={{ backgroundColor: "#CFE1CB" }}
+                      >
+                        <Star className="text-green-800" size={24} />
                       </div>
                       <div>
                         <p className="text-gray-900 font-bold">
@@ -215,21 +344,80 @@ export default function BrandStory() {
           </div>
         </section>
 
-        {/* NALMANAM Brand Introduction */}
-        <section className="py-16 md:py-24 bg-amber-50 relative parallax-section">
-          <div className="absolute inset-0 bg-[url('/spice-pattern.png')] opacity-5 bg-repeat parallax-bg"></div>
+        {/* NALMANAM Brand Introduction with Tradition Illustration */}
+        <section
+          className="py-16 md:py-24 relative parallax-section"
+          style={{ backgroundColor: "rgba(207, 225, 203, 0.3)" }}
+        >
+          <div
+            className="absolute inset-0 opacity-5 bg-repeat parallax-bg"
+            style={{ backgroundImage: 'url("/spice-pattern.png")' }}
+          ></div>
+
+          {/* Traditional Cooking Scene SVG */}
+          <div className="absolute top-0 right-0 w-full h-full overflow-hidden opacity-10">
+            <svg
+              viewBox="0 0 800 600"
+              className="absolute -top-10 -right-10 w-1/2 h-auto"
+            >
+              {/* Traditional Kitchen Setup */}
+              <g transform="translate(100, 100)">
+                {/* Stove/Chulha */}
+                <ellipse cx="200" cy="300" rx="80" ry="40" fill="#8B4513" />
+                <rect x="120" y="260" width="160" height="40" fill="#A0522D" />
+                {/* Grinding Stone */}
+                <ellipse cx="400" cy="280" rx="60" ry="30" fill="#696969" />
+                <ellipse cx="400" cy="275" rx="50" ry="25" fill="#778899" />
+                {/* Woman Grinding Spices */}
+                <g transform="translate(350, 180)">
+                  <ellipse cx="50" cy="60" rx="25" ry="35" fill="#DEB887" />
+                  <circle cx="50" cy="25" r="15" fill="#F4A460" />
+                  <path
+                    d="M35 20 Q50 10 65 20 Q60 12 50 12 Q40 12 35 20"
+                    fill="#2F4F4F"
+                  />
+                  <ellipse
+                    cx="35"
+                    cy="45"
+                    rx="6"
+                    ry="20"
+                    fill="#F4A460"
+                    transform="rotate(-30 35 45)"
+                  />
+                  <ellipse
+                    cx="65"
+                    cy="45"
+                    rx="6"
+                    ry="20"
+                    fill="#F4A460"
+                    transform="rotate(30 65 45)"
+                  />
+                </g>
+                {/* Spice Piles */}
+                <ellipse cx="500" cy="320" rx="15" ry="8" fill="#FF4500" />
+                <ellipse cx="530" cy="315" rx="12" ry="6" fill="#FFD700" />
+                <ellipse cx="560" cy="325" rx="10" ry="5" fill="#32CD32" />
+                {/* Traditional Vessels */}
+                <ellipse cx="50" cy="300" rx="25" ry="35" fill="#CD853F" />
+                <ellipse cx="80" cy="295" rx="20" ry="30" fill="#DEB887" />
+              </g>
+            </svg>
+          </div>
 
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-5xl mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div>
-                  <h2 className="text-sm font-medium text-amber-700 uppercase tracking-wider mb-2">
+                  <h2 className="text-sm font-medium text-green-700 uppercase tracking-wider mb-2">
                     Our Premium Brand
                   </h2>
                   <h3 className="text-3xl md:text-4xl font-bold text-gray-900 font-serif mb-6">
                     The Birth of NALMANAM
                   </h3>
-                  <div className="w-24 h-1 bg-amber-600 mb-6"></div>
+                  <div
+                    className="w-24 h-1 mb-6"
+                    style={{ backgroundColor: "#7a9d73" }}
+                  ></div>
                   <p className="text-gray-700 mb-4 leading-relaxed">
                     In 1987, responding to growing demand for our quality
                     spices, we launched NALMANAM – our premium masala brand. The
@@ -253,15 +441,15 @@ export default function BrandStory() {
 
                   <div className="flex flex-wrap gap-4 mt-6">
                     <div className="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
-                      <Leaf className="text-amber-700 mr-2" size={18} />
+                      <Leaf className="text-green-700 mr-2" size={18} />
                       <span className="text-gray-800">100% Natural</span>
                     </div>
                     <div className="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
-                      <Shield className="text-amber-700 mr-2" size={18} />
+                      <Shield className="text-green-700 mr-2" size={18} />
                       <span className="text-gray-800">No Preservatives</span>
                     </div>
                     <div className="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
-                      <Award className="text-amber-700 mr-2" size={18} />
+                      <Award className="text-green-700 mr-2" size={18} />
                       <span className="text-gray-800">Premium Quality</span>
                     </div>
                   </div>
@@ -278,43 +466,142 @@ export default function BrandStory() {
                       />
                     </div>
                   </div>
-                  <div className="absolute -bottom-6 -right-6 w-36 h-36 bg-amber-100 rounded-full -z-10"></div>
-                  <div className="absolute -top-6 -left-6 w-24 h-24 bg-amber-200 rounded-full -z-10"></div>
+                  <div
+                    className="absolute -bottom-6 -right-6 w-36 h-36 rounded-full -z-10"
+                    style={{ backgroundColor: "rgba(207, 225, 203, 0.5)" }}
+                  ></div>
+                  <div
+                    className="absolute -top-6 -left-6 w-24 h-24 rounded-full -z-10"
+                    style={{ backgroundColor: "rgba(207, 225, 203, 0.7)" }}
+                  ></div>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Timeline Section */}
+        {/* Timeline Section with South Indian Temple Architecture */}
         <section
           id="timeline"
           ref={timelineRef}
           className="py-16 md:py-24 bg-white relative"
         >
+          {/* Tamil Heritage Illustration */}
+          <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-5">
+            <svg viewBox="0 0 1200 800" className="w-full h-auto">
+              {/* Temple Silhouette */}
+              <g transform="translate(50, 200)">
+                {/* Main Temple Structure */}
+                <rect x="100" y="300" width="200" height="200" fill="#8B7355" />
+                {/* Temple Tower (Gopuram) */}
+                <polygon
+                  points="150,300 180,200 220,200 250,300"
+                  fill="#A0522D"
+                />
+                {/* Multiple Tiers */}
+                <rect x="160" y="220" width="80" height="30" fill="#8B7355" />
+                <rect x="170" y="200" width="60" height="25" fill="#A0522D" />
+                <rect x="180" y="180" width="40" height="20" fill="#8B7355" />
+                {/* Decorative Elements */}
+                <circle cx="200" cy="190" r="8" fill="#FFD700" />
+                <rect x="195" y="185" width="10" height="2" fill="#FFD700" />
+                <rect x="195" y="195" width="10" height="2" fill="#FFD700" />
+              </g>
+              {/* Palm Trees */}
+              <g transform="translate(600, 300)">
+                <line
+                  x1="50"
+                  y1="200"
+                  x2="50"
+                  y2="50"
+                  stroke="#8B4513"
+                  strokeWidth="4"
+                />
+                <ellipse
+                  cx="50"
+                  cy="45"
+                  rx="15"
+                  ry="8"
+                  fill="#228B22"
+                  transform="rotate(0 50 45)"
+                />
+                <ellipse
+                  cx="50"
+                  cy="45"
+                  rx="15"
+                  ry="8"
+                  fill="#228B22"
+                  transform="rotate(45 50 45)"
+                />
+                <ellipse
+                  cx="50"
+                  cy="45"
+                  rx="15"
+                  ry="8"
+                  fill="#228B22"
+                  transform="rotate(90 50 45)"
+                />
+                <ellipse
+                  cx="50"
+                  cy="45"
+                  rx="15"
+                  ry="8"
+                  fill="#228B22"
+                  transform="rotate(135 50 45)"
+                />
+              </g>
+              {/* Traditional Cart */}
+              <g transform="translate(300, 450)">
+                <rect x="0" y="20" width="80" height="30" fill="#8B4513" />
+                <circle cx="15" cy="60" r="12" fill="#654321" />
+                <circle cx="65" cy="60" r="12" fill="#654321" />
+                <line
+                  x1="-20"
+                  y1="35"
+                  x2="0"
+                  y2="35"
+                  stroke="#8B4513"
+                  strokeWidth="3"
+                />
+              </g>
+            </svg>
+          </div>
+
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-sm font-medium text-amber-700 uppercase tracking-wider mb-2">
+              <h2 className="text-sm font-medium text-green-700 uppercase tracking-wider mb-2">
                 Our Journey
               </h2>
               <h3 className="text-3xl md:text-4xl font-bold text-gray-900 font-serif">
                 Milestones Through The Years
               </h3>
-              <div className="w-24 h-1 bg-amber-600 mx-auto mt-4"></div>
+              <div
+                className="w-24 h-1 mx-auto mt-4"
+                style={{ backgroundColor: "#7a9d73" }}
+              ></div>
             </div>
 
             {/* Timeline */}
             <div className="relative">
               {/* Vertical Line */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-amber-200 hidden md:block"></div>
+              <div
+                className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full hidden md:block"
+                style={{ backgroundColor: "#CFE1CB" }}
+              ></div>
 
               {/* Timeline Items */}
               <div className="space-y-12 md:space-y-0 relative">
                 {/* 1965 */}
                 <div className="md:grid md:grid-cols-2 md:gap-8 timeline-item">
                   <div className="md:text-right md:pr-12 relative">
-                    <div className="hidden md:block absolute right-0 top-6 transform translate-x-1/2 w-5 h-5 bg-amber-500 rounded-full border-4 border-amber-100 z-10"></div>
-                    <span className="inline-block text-amber-800 text-2xl md:text-3xl font-bold font-serif mb-2">
+                    <div
+                      className="hidden md:block absolute right-0 top-6 transform translate-x-1/2 w-5 h-5 rounded-full border-4 z-10"
+                      style={{
+                        backgroundColor: "#7a9d73",
+                        borderColor: "#CFE1CB",
+                      }}
+                    ></div>
+                    <span className="inline-block text-green-800 text-2xl md:text-3xl font-bold font-serif mb-2">
                       1965
                     </span>
                     <h4 className="text-xl font-bold text-gray-900 mb-2">
@@ -333,8 +620,14 @@ export default function BrandStory() {
                 <div className="md:grid md:grid-cols-2 md:gap-8 timeline-item pt-12 md:pt-24">
                   <div className="hidden md:block"></div>
                   <div className="md:pl-12 relative">
-                    <div className="hidden md:block absolute left-0 top-6 transform -translate-x-1/2 w-5 h-5 bg-amber-500 rounded-full border-4 border-amber-100 z-10"></div>
-                    <span className="inline-block text-amber-800 text-2xl md:text-3xl font-bold font-serif mb-2">
+                    <div
+                      className="hidden md:block absolute left-0 top-6 transform -translate-x-1/2 w-5 h-5 rounded-full border-4 z-10"
+                      style={{
+                        backgroundColor: "#7a9d73",
+                        borderColor: "#CFE1CB",
+                      }}
+                    ></div>
+                    <span className="inline-block text-green-800 text-2xl md:text-3xl font-bold font-serif mb-2">
                       1973
                     </span>
                     <h4 className="text-xl font-bold text-gray-900 mb-2">
@@ -352,8 +645,14 @@ export default function BrandStory() {
                 {/* 1987 */}
                 <div className="md:grid md:grid-cols-2 md:gap-8 timeline-item pt-12 md:pt-24">
                   <div className="md:text-right md:pr-12 relative">
-                    <div className="hidden md:block absolute right-0 top-6 transform translate-x-1/2 w-5 h-5 bg-amber-500 rounded-full border-4 border-amber-100 z-10"></div>
-                    <span className="inline-block text-amber-800 text-2xl md:text-3xl font-bold font-serif mb-2">
+                    <div
+                      className="hidden md:block absolute right-0 top-6 transform translate-x-1/2 w-5 h-5 rounded-full border-4 z-10"
+                      style={{
+                        backgroundColor: "#7a9d73",
+                        borderColor: "#CFE1CB",
+                      }}
+                    ></div>
+                    <span className="inline-block text-green-800 text-2xl md:text-3xl font-bold font-serif mb-2">
                       1987
                     </span>
                     <h4 className="text-xl font-bold text-gray-900 mb-2">
@@ -373,8 +672,14 @@ export default function BrandStory() {
                 <div className="md:grid md:grid-cols-2 md:gap-8 timeline-item pt-12 md:pt-24">
                   <div className="hidden md:block"></div>
                   <div className="md:pl-12 relative">
-                    <div className="hidden md:block absolute left-0 top-6 transform -translate-x-1/2 w-5 h-5 bg-amber-500 rounded-full border-4 border-amber-100 z-10"></div>
-                    <span className="inline-block text-amber-800 text-2xl md:text-3xl font-bold font-serif mb-2">
+                    <div
+                      className="hidden md:block absolute left-0 top-6 transform -translate-x-1/2 w-5 h-5 rounded-full border-4 z-10"
+                      style={{
+                        backgroundColor: "#7a9d73",
+                        borderColor: "#CFE1CB",
+                      }}
+                    ></div>
+                    <span className="inline-block text-green-800 text-2xl md:text-3xl font-bold font-serif mb-2">
                       1995
                     </span>
                     <h4 className="text-xl font-bold text-gray-900 mb-2">
@@ -392,8 +697,14 @@ export default function BrandStory() {
                 {/* 2003 */}
                 <div className="md:grid md:grid-cols-2 md:gap-8 timeline-item pt-12 md:pt-24">
                   <div className="md:text-right md:pr-12 relative">
-                    <div className="hidden md:block absolute right-0 top-6 transform translate-x-1/2 w-5 h-5 bg-amber-500 rounded-full border-4 border-amber-100 z-10"></div>
-                    <span className="inline-block text-amber-800 text-2xl md:text-3xl font-bold font-serif mb-2">
+                    <div
+                      className="hidden md:block absolute right-0 top-6 transform translate-x-1/2 w-5 h-5 rounded-full border-4 z-10"
+                      style={{
+                        backgroundColor: "#7a9d73",
+                        borderColor: "#CFE1CB",
+                      }}
+                    ></div>
+                    <span className="inline-block text-green-800 text-2xl md:text-3xl font-bold font-serif mb-2">
                       2003
                     </span>
                     <h4 className="text-xl font-bold text-gray-900 mb-2">
@@ -413,8 +724,14 @@ export default function BrandStory() {
                 <div className="md:grid md:grid-cols-2 md:gap-8 timeline-item pt-12 md:pt-24">
                   <div className="hidden md:block"></div>
                   <div className="md:pl-12 relative">
-                    <div className="hidden md:block absolute left-0 top-6 transform -translate-x-1/2 w-5 h-5 bg-amber-500 rounded-full border-4 border-amber-100 z-10"></div>
-                    <span className="inline-block text-amber-800 text-2xl md:text-3xl font-bold font-serif mb-2">
+                    <div
+                      className="hidden md:block absolute left-0 top-6 transform -translate-x-1/2 w-5 h-5 rounded-full border-4 z-10"
+                      style={{
+                        backgroundColor: "#7a9d73",
+                        borderColor: "#CFE1CB",
+                      }}
+                    ></div>
+                    <span className="inline-block text-green-800 text-2xl md:text-3xl font-bold font-serif mb-2">
                       2012
                     </span>
                     <h4 className="text-xl font-bold text-gray-900 mb-2">
@@ -431,8 +748,14 @@ export default function BrandStory() {
                 {/* 2018 */}
                 <div className="md:grid md:grid-cols-2 md:gap-8 timeline-item pt-12 md:pt-24">
                   <div className="md:text-right md:pr-12 relative">
-                    <div className="hidden md:block absolute right-0 top-6 transform translate-x-1/2 w-5 h-5 bg-amber-500 rounded-full border-4 border-amber-100 z-10"></div>
-                    <span className="inline-block text-amber-800 text-2xl md:text-3xl font-bold font-serif mb-2">
+                    <div
+                      className="hidden md:block absolute right-0 top-6 transform translate-x-1/2 w-5 h-5 rounded-full border-4 z-10"
+                      style={{
+                        backgroundColor: "#7a9d73",
+                        borderColor: "#CFE1CB",
+                      }}
+                    ></div>
+                    <span className="inline-block text-green-800 text-2xl md:text-3xl font-bold font-serif mb-2">
                       2018
                     </span>
                     <h4 className="text-xl font-bold text-gray-900 mb-2">
@@ -452,8 +775,14 @@ export default function BrandStory() {
                 <div className="md:grid md:grid-cols-2 md:gap-8 timeline-item pt-12 md:pt-24">
                   <div className="hidden md:block"></div>
                   <div className="md:pl-12 relative">
-                    <div className="hidden md:block absolute left-0 top-6 transform -translate-x-1/2 w-5 h-5 bg-amber-500 rounded-full border-4 border-amber-100 z-10"></div>
-                    <span className="inline-block text-amber-800 text-2xl md:text-3xl font-bold font-serif mb-2">
+                    <div
+                      className="hidden md:block absolute left-0 top-6 transform -translate-x-1/2 w-5 h-5 rounded-full border-4 z-10"
+                      style={{
+                        backgroundColor: "#7a9d73",
+                        borderColor: "#CFE1CB",
+                      }}
+                    ></div>
+                    <span className="inline-block text-green-800 text-2xl md:text-3xl font-bold font-serif mb-2">
                       Today
                     </span>
                     <h4 className="text-xl font-bold text-gray-900 mb-2">
@@ -475,28 +804,45 @@ export default function BrandStory() {
         {/* Our Values */}
         <section
           ref={valuesRef}
-          className="py-16 md:py-24 bg-amber-800 text-white relative overflow-hidden"
+          className="py-16 md:py-24 text-white relative overflow-hidden"
+          style={{ backgroundColor: "#7a9d73" }}
         >
-          <div className="absolute inset-0 bg-[url('/spice-pattern.png')] opacity-10 bg-repeat"></div>
+          <div
+            className="absolute inset-0 opacity-10 bg-repeat"
+            style={{ backgroundImage: 'url("/spice-pattern.png")' }}
+          ></div>
 
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16">
-              <h2 className="text-sm font-medium text-amber-300 uppercase tracking-wider mb-2">
+              <h2 className="text-sm font-medium text-green-200 uppercase tracking-wider mb-2">
                 What Drives Us
               </h2>
               <h3 className="text-3xl md:text-4xl font-bold font-serif">
                 Our Core Values
               </h3>
-              <div className="w-24 h-1 bg-amber-500 mx-auto mt-4"></div>
+              <div
+                className="w-24 h-1 mx-auto mt-4"
+                style={{ backgroundColor: "#CFE1CB" }}
+              ></div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
               {/* Value 1 */}
-              <div className="value-item bg-amber-900/50 p-8 rounded-lg border border-amber-700/50 text-center hover:bg-amber-900 transition-all duration-300">
-                <div className="w-16 h-16 bg-amber-600/30 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div
+                className="value-item p-8 rounded-lg border text-center transition-all duration-300"
+                style={{
+                  backgroundColor: "rgba(107, 138, 102, 0.5)",
+                  borderColor: "rgba(207, 225, 203, 0.5)",
+                  "&:hover": { backgroundColor: "rgba(107, 138, 102, 0.7)" },
+                }}
+              >
+                <div
+                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6"
+                  style={{ backgroundColor: "rgba(207, 225, 203, 0.3)" }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-8 w-8 text-amber-200"
+                    className="h-8 w-8 text-green-200"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -507,10 +853,10 @@ export default function BrandStory() {
                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                   </svg>
                 </div>
-                <h4 className="text-xl font-bold text-amber-200 mb-3">
+                <h4 className="text-xl font-bold text-green-200 mb-3">
                   Quality Without Compromise
                 </h4>
-                <p className="text-amber-100/80">
+                <p className="text-green-100/80">
                   We refuse to cut corners. From sourcing to processing to
                   packaging, we maintain the highest standards at every step,
                   ensuring our products always exceed expectations.
@@ -518,11 +864,21 @@ export default function BrandStory() {
               </div>
 
               {/* Value 2 */}
-              <div className="value-item bg-amber-900/50 p-8 rounded-lg border border-amber-700/50 text-center hover:bg-amber-900 transition-all duration-300">
-                <div className="w-16 h-16 bg-amber-600/30 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div
+                className="value-item p-8 rounded-lg border text-center transition-all duration-300"
+                style={{
+                  backgroundColor: "rgba(107, 138, 102, 0.5)",
+                  borderColor: "rgba(207, 225, 203, 0.5)",
+                  "&:hover": { backgroundColor: "rgba(107, 138, 102, 0.7)" },
+                }}
+              >
+                <div
+                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6"
+                  style={{ backgroundColor: "rgba(207, 225, 203, 0.3)" }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-8 w-8 text-amber-200"
+                    className="h-8 w-8 text-green-200"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -533,10 +889,10 @@ export default function BrandStory() {
                     <path d="M3 5v14h18V5H3zm2 4h14M7 15l2.5-4 3 3L15 9l2 2"></path>
                   </svg>
                 </div>
-                <h4 className="text-xl font-bold text-amber-200 mb-3">
+                <h4 className="text-xl font-bold text-green-200 mb-3">
                   Authentic Traditions
                 </h4>
-                <p className="text-amber-100/80">
+                <p className="text-green-100/80">
                   We honor age-old recipes and traditional processing methods
                   that have been passed down through generations, preserving the
                   authentic flavors of Indian cuisine.
@@ -544,11 +900,21 @@ export default function BrandStory() {
               </div>
 
               {/* Value 3 */}
-              <div className="value-item bg-amber-900/50 p-8 rounded-lg border border-amber-700/50 text-center hover:bg-amber-900 transition-all duration-300">
-                <div className="w-16 h-16 bg-amber-600/30 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div
+                className="value-item p-8 rounded-lg border text-center transition-all duration-300"
+                style={{
+                  backgroundColor: "rgba(107, 138, 102, 0.5)",
+                  borderColor: "rgba(207, 225, 203, 0.5)",
+                  "&:hover": { backgroundColor: "rgba(107, 138, 102, 0.7)" },
+                }}
+              >
+                <div
+                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6"
+                  style={{ backgroundColor: "rgba(207, 225, 203, 0.3)" }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-8 w-8 text-amber-200"
+                    className="h-8 w-8 text-green-200"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -559,10 +925,10 @@ export default function BrandStory() {
                     <path d="M12 3 8 13l8 10-4-10-8-10z"></path>
                   </svg>
                 </div>
-                <h4 className="text-xl font-bold text-amber-200 mb-3">
+                <h4 className="text-xl font-bold text-green-200 mb-3">
                   Natural Purity
                 </h4>
-                <p className="text-amber-100/80">
+                <p className="text-green-100/80">
                   We believe in the power of nature. Our products are 100%
                   natural, free from preservatives, artificial colors, and
                   chemicals, allowing the true essence of each ingredient to
@@ -571,11 +937,21 @@ export default function BrandStory() {
               </div>
 
               {/* Value 4 */}
-              <div className="value-item bg-amber-900/50 p-8 rounded-lg border border-amber-700/50 text-center hover:bg-amber-900 transition-all duration-300">
-                <div className="w-16 h-16 bg-amber-600/30 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div
+                className="value-item p-8 rounded-lg border text-center transition-all duration-300"
+                style={{
+                  backgroundColor: "rgba(107, 138, 102, 0.5)",
+                  borderColor: "rgba(207, 225, 203, 0.5)",
+                  "&:hover": { backgroundColor: "rgba(107, 138, 102, 0.7)" },
+                }}
+              >
+                <div
+                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6"
+                  style={{ backgroundColor: "rgba(207, 225, 203, 0.3)" }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-8 w-8 text-amber-200"
+                    className="h-8 w-8 text-green-200"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -586,10 +962,10 @@ export default function BrandStory() {
                     <path d="M17 8h5l-5 5v4h3v3h-11v-3h3v-4l-5-5h5v-6h4z"></path>
                   </svg>
                 </div>
-                <h4 className="text-xl font-bold text-amber-200 mb-3">
+                <h4 className="text-xl font-bold text-green-200 mb-3">
                   Farmer Partnerships
                 </h4>
-                <p className="text-amber-100/80">
+                <p className="text-green-100/80">
                   We build lasting relationships with farmers who share our
                   passion for quality. By sourcing directly, we ensure fair
                   practices while maintaining control over the quality of raw
@@ -598,11 +974,21 @@ export default function BrandStory() {
               </div>
 
               {/* Value 5 */}
-              <div className="value-item bg-amber-900/50 p-8 rounded-lg border border-amber-700/50 text-center hover:bg-amber-900 transition-all duration-300">
-                <div className="w-16 h-16 bg-amber-600/30 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div
+                className="value-item p-8 rounded-lg border text-center transition-all duration-300"
+                style={{
+                  backgroundColor: "rgba(107, 138, 102, 0.5)",
+                  borderColor: "rgba(207, 225, 203, 0.5)",
+                  "&:hover": { backgroundColor: "rgba(107, 138, 102, 0.7)" },
+                }}
+              >
+                <div
+                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6"
+                  style={{ backgroundColor: "rgba(207, 225, 203, 0.3)" }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-8 w-8 text-amber-200"
+                    className="h-8 w-8 text-green-200"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -613,10 +999,10 @@ export default function BrandStory() {
                     <path d="M20 7h-9m0 7h9M20 19h-9M4 15h3M4 19h3M4 7h3M4 11h3"></path>
                   </svg>
                 </div>
-                <h4 className="text-xl font-bold text-amber-200 mb-3">
+                <h4 className="text-xl font-bold text-green-200 mb-3">
                   Continuous Innovation
                 </h4>
-                <p className="text-amber-100/80">
+                <p className="text-green-100/80">
                   While respecting tradition, we continuously innovate to meet
                   evolving needs, combining ancient wisdom with modern science
                   to create products that resonate with today's consumers.
@@ -624,11 +1010,21 @@ export default function BrandStory() {
               </div>
 
               {/* Value 6 */}
-              <div className="value-item bg-amber-900/50 p-8 rounded-lg border border-amber-700/50 text-center hover:bg-amber-900 transition-all duration-300">
-                <div className="w-16 h-16 bg-amber-600/30 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div
+                className="value-item p-8 rounded-lg border text-center transition-all duration-300"
+                style={{
+                  backgroundColor: "rgba(107, 138, 102, 0.5)",
+                  borderColor: "rgba(207, 225, 203, 0.5)",
+                  "&:hover": { backgroundColor: "rgba(107, 138, 102, 0.7)" },
+                }}
+              >
+                <div
+                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6"
+                  style={{ backgroundColor: "rgba(207, 225, 203, 0.3)" }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-8 w-8 text-amber-200"
+                    className="h-8 w-8 text-green-200"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -639,10 +1035,10 @@ export default function BrandStory() {
                     <path d="M3 6c4 0 7 2 9 6 2-4 5-6 9-6M3 12c4 0 7 2 9 6 2-4 5-6 9-6M3 18c4 0 7 2 9 6 2-4 5-6 9-6"></path>
                   </svg>
                 </div>
-                <h4 className="text-xl font-bold text-amber-200 mb-3">
+                <h4 className="text-xl font-bold text-green-200 mb-3">
                   Family Legacy
                 </h4>
-                <p className="text-amber-100/80">
+                <p className="text-green-100/80">
                   As a family-owned business spanning generations, we honor our
                   heritage and the wisdom of our founders while embracing new
                   ideas that carry our legacy into the future.
@@ -656,13 +1052,16 @@ export default function BrandStory() {
         <section className="py-16 md:py-24 bg-white process-section relative">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-sm font-medium text-amber-700 uppercase tracking-wider mb-2">
+              <h2 className="text-sm font-medium text-green-700 uppercase tracking-wider mb-2">
                 Our Methods
               </h2>
               <h3 className="text-3xl md:text-4xl font-bold text-gray-900 font-serif">
                 The Traditional Process
               </h3>
-              <div className="w-24 h-1 bg-amber-600 mx-auto mt-4"></div>
+              <div
+                className="w-24 h-1 mx-auto mt-4"
+                style={{ backgroundColor: "#7a9d73" }}
+              ></div>
               <p className="max-w-3xl mx-auto mt-6 text-gray-600">
                 What sets NALMANAM apart is our unwavering commitment to
                 traditional processing methods. While many have moved towards
@@ -684,14 +1083,17 @@ export default function BrandStory() {
                         className="object-cover"
                       />
                     </div>
-                    <div className="absolute top-0 left-0 bg-amber-800 text-white w-12 h-12 flex items-center justify-center text-xl font-bold">
+                    <div
+                      className="absolute top-0 left-0 text-white w-12 h-12 flex items-center justify-center text-xl font-bold"
+                      style={{ backgroundColor: "#7a9d73" }}
+                    >
                       01
                     </div>
                   </div>
                 </div>
 
                 <div className="process-item">
-                  <h4 className="text-2xl font-bold text-amber-800 mb-4 font-serif">
+                  <h4 className="text-2xl font-bold text-green-800 mb-4 font-serif">
                     Careful Selection
                   </h4>
                   <p className="text-gray-700 mb-4">
@@ -711,7 +1113,7 @@ export default function BrandStory() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
                 <div className="process-item order-2 md:order-1">
-                  <h4 className="text-2xl font-bold text-amber-800 mb-4 font-serif">
+                  <h4 className="text-2xl font-bold text-green-800 mb-4 font-serif">
                     Traditional Cleaning
                   </h4>
                   <p className="text-gray-700 mb-4">
@@ -737,7 +1139,10 @@ export default function BrandStory() {
                         className="object-cover"
                       />
                     </div>
-                    <div className="absolute top-0 left-0 bg-amber-800 text-white w-12 h-12 flex items-center justify-center text-xl font-bold">
+                    <div
+                      className="absolute top-0 left-0 text-white w-12 h-12 flex items-center justify-center text-xl font-bold"
+                      style={{ backgroundColor: "#7a9d73" }}
+                    >
                       02
                     </div>
                   </div>
@@ -755,14 +1160,17 @@ export default function BrandStory() {
                         className="object-cover"
                       />
                     </div>
-                    <div className="absolute top-0 left-0 bg-amber-800 text-white w-12 h-12 flex items-center justify-center text-xl font-bold">
+                    <div
+                      className="absolute top-0 left-0 text-white w-12 h-12 flex items-center justify-center text-xl font-bold"
+                      style={{ backgroundColor: "#7a9d73" }}
+                    >
                       03
                     </div>
                   </div>
                 </div>
 
                 <div className="process-item">
-                  <h4 className="text-2xl font-bold text-amber-800 mb-4 font-serif">
+                  <h4 className="text-2xl font-bold text-green-800 mb-4 font-serif">
                     Stone Grinding
                   </h4>
                   <p className="text-gray-700 mb-4">
@@ -782,7 +1190,7 @@ export default function BrandStory() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
                 <div className="process-item order-2 md:order-1">
-                  <h4 className="text-2xl font-bold text-amber-800 mb-4 font-serif">
+                  <h4 className="text-2xl font-bold text-green-800 mb-4 font-serif">
                     Master Blending
                   </h4>
                   <p className="text-gray-700 mb-4">
@@ -809,7 +1217,10 @@ export default function BrandStory() {
                         className="object-cover"
                       />
                     </div>
-                    <div className="absolute top-0 left-0 bg-amber-800 text-white w-12 h-12 flex items-center justify-center text-xl font-bold">
+                    <div
+                      className="absolute top-0 left-0 text-white w-12 h-12 flex items-center justify-center text-xl font-bold"
+                      style={{ backgroundColor: "#7a9d73" }}
+                    >
                       04
                     </div>
                   </div>
@@ -827,14 +1238,17 @@ export default function BrandStory() {
                         className="object-cover"
                       />
                     </div>
-                    <div className="absolute top-0 left-0 bg-amber-800 text-white w-12 h-12 flex items-center justify-center text-xl font-bold">
+                    <div
+                      className="absolute top-0 left-0 text-white w-12 h-12 flex items-center justify-center text-xl font-bold"
+                      style={{ backgroundColor: "#7a9d73" }}
+                    >
                       05
                     </div>
                   </div>
                 </div>
 
                 <div className="process-item">
-                  <h4 className="text-2xl font-bold text-amber-800 mb-4 font-serif">
+                  <h4 className="text-2xl font-bold text-green-800 mb-4 font-serif">
                     Quality Testing
                   </h4>
                   <p className="text-gray-700 mb-4">
@@ -855,18 +1269,27 @@ export default function BrandStory() {
         </section>
 
         {/* Testimonials */}
-        <section className="py-16 md:py-24 bg-amber-50 relative">
-          <div className="absolute inset-0 bg-[url('/spice-pattern.png')] opacity-5 bg-repeat"></div>
+        <section
+          className="py-16 md:py-24 relative"
+          style={{ backgroundColor: "rgba(207, 225, 203, 0.3)" }}
+        >
+          <div
+            className="absolute inset-0 opacity-5 bg-repeat"
+            style={{ backgroundImage: 'url("/spice-pattern.png")' }}
+          ></div>
 
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16">
-              <h2 className="text-sm font-medium text-amber-700 uppercase tracking-wider mb-2">
+              <h2 className="text-sm font-medium text-green-700 uppercase tracking-wider mb-2">
                 Trusted For Generations
               </h2>
               <h3 className="text-3xl md:text-4xl font-bold text-gray-900 font-serif">
                 What People Say
               </h3>
-              <div className="w-24 h-1 bg-amber-600 mx-auto mt-4"></div>
+              <div
+                className="w-24 h-1 mx-auto mt-4"
+                style={{ backgroundColor: "#7a9d73" }}
+              ></div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -882,7 +1305,7 @@ export default function BrandStory() {
                   >
                     <path
                       d="M0 20L10 0H20L10 20H0V40H20V20H10L20 0H30L20 20H10V40H30V20H20L30 0H40L30 20H20V40H40V0H30V20H40V0H0V20Z"
-                      fill="#B45309"
+                      fill="#7a9d73"
                       fillOpacity="0.1"
                     />
                   </svg>
@@ -894,14 +1317,17 @@ export default function BrandStory() {
                   me to my grandmother's kitchen."
                 </p>
                 <div className="flex items-center">
-                  <div className="bg-amber-100 w-12 h-12 rounded-full flex items-center justify-center text-amber-800 font-bold text-lg mr-4">
+                  <div
+                    className="w-12 h-12 rounded-full flex items-center justify-center text-green-800 font-bold text-lg mr-4"
+                    style={{ backgroundColor: "#CFE1CB" }}
+                  >
                     L
                   </div>
                   <div>
                     <h5 className="font-bold text-gray-900">
                       Lakshmi Venkatesh
                     </h5>
-                    <p className="text-amber-700 text-sm">Home Chef, Chennai</p>
+                    <p className="text-green-700 text-sm">Home Chef, Chennai</p>
                   </div>
                 </div>
               </div>
@@ -918,7 +1344,7 @@ export default function BrandStory() {
                   >
                     <path
                       d="M0 20L10 0H20L10 20H0V40H20V20H10L20 0H30L20 20H10V40H30V20H20L30 0H40L30 20H20V40H40V0H30V20H40V0H0V20Z"
-                      fill="#B45309"
+                      fill="#7a9d73"
                       fillOpacity="0.1"
                     />
                   </svg>
@@ -930,12 +1356,15 @@ export default function BrandStory() {
                   what secret ingredients we use in our dishes."
                 </p>
                 <div className="flex items-center">
-                  <div className="bg-amber-100 w-12 h-12 rounded-full flex items-center justify-center text-amber-800 font-bold text-lg mr-4">
+                  <div
+                    className="w-12 h-12 rounded-full flex items-center justify-center text-green-800 font-bold text-lg mr-4"
+                    style={{ backgroundColor: "#CFE1CB" }}
+                  >
                     R
                   </div>
                   <div>
                     <h5 className="font-bold text-gray-900">Rajesh Kumar</h5>
-                    <p className="text-amber-700 text-sm">
+                    <p className="text-green-700 text-sm">
                       Restaurant Owner, Coimbatore
                     </p>
                   </div>
@@ -954,7 +1383,7 @@ export default function BrandStory() {
                   >
                     <path
                       d="M0 20L10 0H20L10 20H0V40H20V20H10L20 0H30L20 20H10V40H30V20H20L30 0H40L30 20H20V40H40V0H30V20H40V0H0V20Z"
-                      fill="#B45309"
+                      fill="#7a9d73"
                       fillOpacity="0.1"
                     />
                   </svg>
@@ -967,12 +1396,15 @@ export default function BrandStory() {
                   cooking."
                 </p>
                 <div className="flex items-center">
-                  <div className="bg-amber-100 w-12 h-12 rounded-full flex items-center justify-center text-amber-800 font-bold text-lg mr-4">
+                  <div
+                    className="w-12 h-12 rounded-full flex items-center justify-center text-green-800 font-bold text-lg mr-4"
+                    style={{ backgroundColor: "#CFE1CB" }}
+                  >
                     P
                   </div>
                   <div>
                     <h5 className="font-bold text-gray-900">Priya Suresh</h5>
-                    <p className="text-amber-700 text-sm">
+                    <p className="text-green-700 text-sm">
                       Software Engineer, Singapore
                     </p>
                   </div>
@@ -983,15 +1415,21 @@ export default function BrandStory() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 md:py-24 bg-amber-800 relative">
-          <div className="absolute inset-0 bg-[url('/spice-pattern.png')] opacity-10 bg-repeat"></div>
+        <section
+          className="py-16 md:py-24 relative"
+          style={{ backgroundColor: "#7a9d73" }}
+        >
+          <div
+            className="absolute inset-0 opacity-10 bg-repeat"
+            style={{ backgroundImage: 'url("/spice-pattern.png")' }}
+          ></div>
 
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-3xl mx-auto text-center text-white">
               <h2 className="text-3xl md:text-4xl font-bold font-serif mb-4">
                 Experience Our Legacy of Flavor
               </h2>
-              <p className="text-amber-100 mb-8 text-lg">
+              <p className="text-green-100 mb-8 text-lg">
                 From our family to yours - discover the authentic taste of
                 premium masalas crafted with care, tradition, and the finest
                 natural ingredients.
@@ -999,9 +1437,8 @@ export default function BrandStory() {
               <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <Link
                   href="/products"
-                  className="bg-white text-amber-800 px-8 py-3 rounded-lg
-                  transform transition-all duration-300 hover:scale-105 hover:shadow-lg 
-                  active:scale-95 inline-flex items-center justify-center font-medium text-base"
+                  className="bg-white px-8 py-3 rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95 inline-flex items-center justify-center font-medium text-base"
+                  style={{ color: "#7a9d73" }}
                 >
                   Explore Our Products
                   <ArrowRight size={18} className="ml-2" />
@@ -1010,9 +1447,8 @@ export default function BrandStory() {
                   href="https://wa.me/918989191965"
                   target="_blank"
                   rel="noreferrer"
-                  className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg
-                  transform transition-all duration-300 hover:scale-105 hover:bg-white hover:text-amber-800 
-                  active:scale-95 inline-flex items-center justify-center font-medium text-base"
+                  className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg transform transition-all duration-300 hover:scale-105 hover:bg-white active:scale-95 inline-flex items-center justify-center font-medium text-base"
+                  style={{ "&:hover": { color: "#7a9d73" } }}
                 >
                   Contact Us
                 </a>

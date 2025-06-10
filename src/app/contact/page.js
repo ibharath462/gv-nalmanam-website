@@ -105,10 +105,22 @@ export default function Contact() {
 
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="relative bg-amber-800 text-white py-16 md:py-24 overflow-hidden">
+        <section
+          className="relative text-white py-16 md:py-24 overflow-hidden"
+          style={{ backgroundColor: "#7a9d73" }}
+        >
           <div className="absolute inset-0 overflow-hidden">
-            <div className="absolute inset-0 bg-[url('/spice-pattern.png')] opacity-10 bg-repeat"></div>
-            <div className="absolute inset-0 bg-gradient-to-r from-amber-950/80 to-amber-800/80"></div>
+            <div
+              className="absolute inset-0 opacity-10 bg-repeat"
+              style={{ backgroundImage: 'url("/spice-pattern.png")' }}
+            ></div>
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  "linear-gradient(to right, rgba(107, 138, 102, 0.9), rgba(122, 157, 115, 0.8))",
+              }}
+            ></div>
           </div>
 
           <div className="container mx-auto px-4 relative z-10">
@@ -116,8 +128,11 @@ export default function Contact() {
               <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">
                 Get in Touch
               </h1>
-              <div className="w-24 h-1 bg-amber-500 mx-auto mb-8"></div>
-              <p className="text-xl text-amber-100 mb-6">
+              <div
+                className="w-24 h-1 mx-auto mb-8"
+                style={{ backgroundColor: "#CFE1CB" }}
+              ></div>
+              <p className="text-xl text-green-100 mb-6">
                 We'd love to hear from you! Whether you have a question about
                 our products, need help with an order, or want to explore
                 business opportunities, our team is here to assist you.
@@ -132,8 +147,11 @@ export default function Contact() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
               {/* Call Us Card */}
               <div className="contact-card bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Phone className="text-amber-800" size={28} />
+                <div
+                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6"
+                  style={{ backgroundColor: "#CFE1CB" }}
+                >
+                  <Phone className="text-green-800" size={28} />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
                   Call Us
@@ -143,7 +161,7 @@ export default function Contact() {
                 </p>
                 <a
                   href="tel:+919566665153"
-                  className="text-amber-800 font-bold text-lg hover:text-amber-600 transition-colors"
+                  className="text-green-800 font-bold text-lg hover:text-green-600 transition-colors"
                 >
                   +91 9566 665 153
                 </a>
@@ -151,8 +169,11 @@ export default function Contact() {
 
               {/* Email Us Card */}
               <div className="contact-card bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Mail className="text-amber-800" size={28} />
+                <div
+                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6"
+                  style={{ backgroundColor: "#CFE1CB" }}
+                >
+                  <Mail className="text-green-800" size={28} />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
                   Email Us
@@ -162,7 +183,7 @@ export default function Contact() {
                 </p>
                 <a
                   href="mailto:nalmanamstore@gmail.com"
-                  className="text-amber-800 font-bold text-lg hover:text-amber-600 transition-colors"
+                  className="text-green-800 font-bold text-lg hover:text-green-600 transition-colors"
                 >
                   nalmanamstore@gmail.com
                 </a>
@@ -170,8 +191,11 @@ export default function Contact() {
 
               {/* WhatsApp Card */}
               <div className="contact-card bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <MessageSquare className="text-amber-800" size={28} />
+                <div
+                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6"
+                  style={{ backgroundColor: "#CFE1CB" }}
+                >
+                  <MessageSquare className="text-green-800" size={28} />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
                   WhatsApp
@@ -183,7 +207,7 @@ export default function Contact() {
                   href="https://wa.me/918989191965"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-amber-800 font-bold text-lg hover:text-amber-600 transition-colors"
+                  className="text-green-800 font-bold text-lg hover:text-green-600 transition-colors"
                 >
                   +91 8989 19 1965
                 </a>
@@ -193,8 +217,14 @@ export default function Contact() {
         </section>
 
         {/* Contact Form & Address */}
-        <section className="py-16 bg-amber-50/50 relative">
-          <div className="absolute inset-0 bg-[url('/spice-pattern.png')] opacity-5 bg-repeat"></div>
+        <section
+          className="py-16 relative"
+          style={{ backgroundColor: "rgba(207, 225, 203, 0.3)" }}
+        >
+          <div
+            className="absolute inset-0 opacity-5 bg-repeat"
+            style={{ backgroundImage: 'url("/spice-pattern.png")' }}
+          ></div>
 
           <div className="container mx-auto px-4 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start max-w-6xl mx-auto">
@@ -218,7 +248,17 @@ export default function Contact() {
                       id="name"
                       className={`w-full px-4 py-3 rounded-lg border ${
                         errors.name ? "border-red-500" : "border-gray-300"
-                      } focus:border-amber-500 focus:ring focus:ring-amber-200 focus:ring-opacity-50 transition-colors`}
+                      } focus:ring focus:ring-opacity-50 transition-colors`}
+                      style={{
+                        "--tw-ring-color": errors.name
+                          ? "rgb(239 68 68)"
+                          : "#CFE1CB",
+                        borderColor: errors.name ? "rgb(239 68 68)" : undefined,
+                        "&:focus": {
+                          borderColor: "#7a9d73",
+                          ringColor: "rgba(207, 225, 203, 0.5)",
+                        },
+                      }}
                       placeholder="John Doe"
                       {...register("name", { required: "Name is required" })}
                     />
@@ -243,7 +283,19 @@ export default function Contact() {
                       id="email"
                       className={`w-full px-4 py-3 rounded-lg border ${
                         errors.email ? "border-red-500" : "border-gray-300"
-                      } focus:border-amber-500 focus:ring focus:ring-amber-200 focus:ring-opacity-50 transition-colors`}
+                      } focus:ring focus:ring-opacity-50 transition-colors`}
+                      style={{
+                        "--tw-ring-color": errors.email
+                          ? "rgb(239 68 68)"
+                          : "#CFE1CB",
+                        borderColor: errors.email
+                          ? "rgb(239 68 68)"
+                          : undefined,
+                        "&:focus": {
+                          borderColor: "#7a9d73",
+                          ringColor: "rgba(207, 225, 203, 0.5)",
+                        },
+                      }}
                       placeholder="john.doe@example.com"
                       {...register("email", {
                         required: "Email is required",
@@ -273,7 +325,19 @@ export default function Contact() {
                       id="subject"
                       className={`w-full px-4 py-3 rounded-lg border ${
                         errors.subject ? "border-red-500" : "border-gray-300"
-                      } focus:border-amber-500 focus:ring focus:ring-amber-200 focus:ring-opacity-50 transition-colors bg-white`}
+                      } focus:ring focus:ring-opacity-50 transition-colors bg-white`}
+                      style={{
+                        "--tw-ring-color": errors.subject
+                          ? "rgb(239 68 68)"
+                          : "#CFE1CB",
+                        borderColor: errors.subject
+                          ? "rgb(239 68 68)"
+                          : undefined,
+                        "&:focus": {
+                          borderColor: "#7a9d73",
+                          ringColor: "rgba(207, 225, 203, 0.5)",
+                        },
+                      }}
                       {...register("subject", {
                         required: "Please select a subject",
                       })}
@@ -308,7 +372,19 @@ export default function Contact() {
                       rows={5}
                       className={`w-full px-4 py-3 rounded-lg border ${
                         errors.message ? "border-red-500" : "border-gray-300"
-                      } focus:border-amber-500 focus:ring focus:ring-amber-200 focus:ring-opacity-50 transition-colors`}
+                      } focus:ring focus:ring-opacity-50 transition-colors`}
+                      style={{
+                        "--tw-ring-color": errors.message
+                          ? "rgb(239 68 68)"
+                          : "#CFE1CB",
+                        borderColor: errors.message
+                          ? "rgb(239 68 68)"
+                          : undefined,
+                        "&:focus": {
+                          borderColor: "#7a9d73",
+                          ringColor: "rgba(207, 225, 203, 0.5)",
+                        },
+                      }}
                       placeholder="How can we help you?"
                       {...register("message", {
                         required: "Message is required",
@@ -327,9 +403,8 @@ export default function Contact() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full bg-gradient-to-r from-amber-800 to-amber-600 text-white px-6 py-3 rounded-lg
-                      transform transition-all duration-300 hover:scale-[1.02] hover:shadow-lg 
-                      active:scale-[0.98] font-medium text-base flex items-center justify-center disabled:opacity-70"
+                      className="w-full text-white px-6 py-3 rounded-lg transform transition-all duration-300 hover:scale-[1.02] hover:shadow-lg active:scale-[0.98] font-medium text-base flex items-center justify-center disabled:opacity-70"
+                      style={{ backgroundColor: "#7a9d73" }}
                     >
                       {isSubmitting ? (
                         <>
@@ -419,7 +494,7 @@ export default function Contact() {
                     <div className="flex">
                       <MapPin
                         size={20}
-                        className="text-amber-800 mt-1 mr-3 flex-shrink-0"
+                        className="text-green-800 mt-1 mr-3 flex-shrink-0"
                       />
                       <div>
                         <p className="text-gray-700 font-bold">
@@ -438,7 +513,7 @@ export default function Contact() {
                     <div className="flex">
                       <Clock
                         size={20}
-                        className="text-amber-800 mt-1 mr-3 flex-shrink-0"
+                        className="text-green-800 mt-1 mr-3 flex-shrink-0"
                       />
                       <div>
                         <p className="text-gray-700 font-bold">
@@ -458,7 +533,7 @@ export default function Contact() {
                       href="https://maps.app.goo.gl/HgEyiY2f3HXRMTqh9"
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center text-amber-800 font-medium hover:text-amber-600 transition-colors"
+                      className="inline-flex items-center text-green-800 font-medium hover:text-green-600 transition-colors"
                     >
                       <MapPin size={16} className="mr-1" />
                       Get Directions
@@ -475,10 +550,13 @@ export default function Contact() {
                     <div>
                       <Link
                         href="/products"
-                        className="flex items-center text-gray-700 hover:text-amber-800 transition-colors group"
+                        className="flex items-center text-gray-700 hover:text-green-800 transition-colors group"
                       >
-                        <div className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center mr-3 group-hover:bg-amber-200 transition-colors">
-                          <Truck size={16} className="text-amber-800" />
+                        <div
+                          className="w-8 h-8 rounded-full flex items-center justify-center mr-3 group-hover:opacity-80 transition-colors"
+                          style={{ backgroundColor: "#CFE1CB" }}
+                        >
+                          <Truck size={16} className="text-green-800" />
                         </div>
                         <span>Browse Our Products</span>
                       </Link>
@@ -487,10 +565,13 @@ export default function Contact() {
                     <div>
                       <Link
                         href="/brand-story"
-                        className="flex items-center text-gray-700 hover:text-amber-800 transition-colors group"
+                        className="flex items-center text-gray-700 hover:text-green-800 transition-colors group"
                       >
-                        <div className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center mr-3 group-hover:bg-amber-200 transition-colors">
-                          <HelpCircle size={16} className="text-amber-800" />
+                        <div
+                          className="w-8 h-8 rounded-full flex items-center justify-center mr-3 group-hover:opacity-80 transition-colors"
+                          style={{ backgroundColor: "#CFE1CB" }}
+                        >
+                          <HelpCircle size={16} className="text-green-800" />
                         </div>
                         <span>About Our Company</span>
                       </Link>
@@ -527,8 +608,14 @@ export default function Contact() {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 bg-amber-50/50 relative">
-          <div className="absolute inset-0 bg-[url('/spice-pattern.png')] opacity-5 bg-repeat"></div>
+        <section
+          className="py-16 relative"
+          style={{ backgroundColor: "rgba(207, 225, 203, 0.3)" }}
+        >
+          <div
+            className="absolute inset-0 opacity-5 bg-repeat"
+            style={{ backgroundImage: 'url("/spice-pattern.png")' }}
+          ></div>
 
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto">
@@ -595,7 +682,7 @@ export default function Contact() {
                 </p>
                 <a
                   href="#contact-form"
-                  className="inline-flex items-center text-amber-800 font-medium hover:text-amber-600 transition-colors"
+                  className="inline-flex items-center text-green-800 font-medium hover:text-green-600 transition-colors"
                 >
                   Contact us for more information
                   <svg

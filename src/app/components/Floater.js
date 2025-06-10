@@ -40,14 +40,21 @@ const FloatingContact = () => {
         {/* Email Button */}
         <a
           href="mailto:nalmanamstore@gmail.com"
-          className="flex items-center justify-center w-14 h-14 md:w-14 md:h-14 bg-gradient-to-r from-amber-700 to-amber-500 text-white rounded-full shadow-lg shadow-amber-900/20 active:bg-amber-800 transition-all duration-300 hover:shadow-xl hover:shadow-amber-900/30 hover:scale-105 group relative md:hover:w-auto md:hover:px-8"
+          className="flex items-center justify-center w-14 h-14 md:w-14 md:h-14 text-white rounded-full shadow-lg active:opacity-80 transition-all duration-300 hover:shadow-xl hover:scale-105 group relative md:hover:w-auto md:hover:px-8"
+          style={{
+            background: "linear-gradient(to right, #7a9d73, #6b8a66)",
+            boxShadow: "0 10px 25px rgba(122, 157, 115, 0.2)",
+          }}
           aria-label="Email us"
         >
           <Mail
             className="w-6 h-6 md:w-6 md:h-6"
             style={{ animation: "pulse 2s ease-in-out infinite" }}
           />
-          <span className="absolute left-16 text-base font-medium whitespace-nowrap bg-amber-700 text-white px-3 py-2 rounded-lg opacity-0 invisible -translate-x-2 transition-all duration-200 group-hover:opacity-100 group-hover:visible group-hover:translate-x-0 md:static md:bg-transparent md:p-0 md:text-inherit md:opacity-0 md:visible md:translate-x-0 md:max-w-0 md:overflow-hidden md:group-hover:max-w-xs md:group-hover:opacity-100 md:group-hover:ml-3">
+          <span
+            className="absolute left-16 text-base font-medium whitespace-nowrap text-white px-3 py-2 rounded-lg opacity-0 invisible -translate-x-2 transition-all duration-200 group-hover:opacity-100 group-hover:visible group-hover:translate-x-0 md:static md:bg-transparent md:p-0 md:text-inherit md:opacity-0 md:visible md:translate-x-0 md:max-w-0 md:overflow-hidden md:group-hover:max-w-xs md:group-hover:opacity-100 md:group-hover:ml-3"
+            style={{ backgroundColor: "#7a9d73" }}
+          >
             Email Us
           </span>
         </a>
@@ -55,14 +62,21 @@ const FloatingContact = () => {
         {/* Products Button */}
         <a
           href="/products"
-          className="flex items-center justify-center w-14 h-14 md:w-14 md:h-14 bg-gradient-to-r from-amber-600 to-amber-400 text-white rounded-full shadow-lg shadow-amber-900/20 active:bg-amber-700 transition-all duration-300 hover:shadow-xl hover:shadow-amber-900/30 hover:scale-105 group relative md:hover:w-auto md:hover:px-8"
+          className="flex items-center justify-center w-14 h-14 md:w-14 md:h-14 text-white rounded-full shadow-lg active:opacity-80 transition-all duration-300 hover:shadow-xl hover:scale-105 group relative md:hover:w-auto md:hover:px-8"
+          style={{
+            background: "linear-gradient(to right, #8bb485, #7a9d73)",
+            boxShadow: "0 10px 25px rgba(139, 180, 133, 0.2)",
+          }}
           aria-label="Browse our products"
         >
           <ShoppingBag
             className="w-6 h-6 md:w-6 md:h-6"
             style={{ animation: "pulse 2s ease-in-out infinite" }}
           />
-          <span className="absolute left-16 text-base font-medium whitespace-nowrap bg-amber-600 text-white px-3 py-2 rounded-lg opacity-0 invisible -translate-x-2 transition-all duration-200 group-hover:opacity-100 group-hover:visible group-hover:translate-x-0 md:static md:bg-transparent md:p-0 md:text-inherit md:opacity-0 md:visible md:translate-x-0 md:max-w-0 md:overflow-hidden md:group-hover:max-w-xs md:group-hover:opacity-100 md:group-hover:ml-3">
+          <span
+            className="absolute left-16 text-base font-medium whitespace-nowrap text-white px-3 py-2 rounded-lg opacity-0 invisible -translate-x-2 transition-all duration-200 group-hover:opacity-100 group-hover:visible group-hover:translate-x-0 md:static md:bg-transparent md:p-0 md:text-inherit md:opacity-0 md:visible md:translate-x-0 md:max-w-0 md:overflow-hidden md:group-hover:max-w-xs md:group-hover:opacity-100 md:group-hover:ml-3"
+            style={{ backgroundColor: "#8bb485" }}
+          >
             Our Products
           </span>
         </a>
@@ -70,14 +84,22 @@ const FloatingContact = () => {
         {/* Call Button */}
         <a
           href={`tel:${phoneNumber}`}
-          className="flex items-center justify-center w-14 h-14 md:w-14 md:h-14 bg-white text-amber-700 ring-1 ring-amber-200 rounded-full shadow-lg shadow-amber-200/50 active:bg-gray-50 transition-all duration-300 hover:shadow-xl hover:shadow-amber-300/50 hover:scale-105 group relative md:hover:w-auto md:hover:px-8"
+          className="flex items-center justify-center w-14 h-14 md:w-14 md:h-14 bg-white ring-1 rounded-full shadow-lg active:bg-gray-50 transition-all duration-300 hover:shadow-xl hover:scale-105 group relative md:hover:w-auto md:hover:px-8"
+          style={{
+            color: "#7a9d73",
+            ringColor: "#CFE1CB",
+            boxShadow: "0 10px 25px rgba(207, 225, 203, 0.5)",
+          }}
           aria-label="Call us"
         >
           <Phone
             className="w-6 h-6 md:w-6 md:h-6"
             style={{ animation: "pulse 2s ease-in-out infinite" }}
           />
-          <span className="absolute left-16 text-base font-medium whitespace-nowrap bg-white text-amber-700 px-3 py-2 rounded-lg opacity-0 invisible -translate-x-2 transition-all duration-200 group-hover:opacity-100 group-hover:visible group-hover:translate-x-0 md:static md:bg-transparent md:p-0 md:text-inherit md:opacity-0 md:visible md:translate-x-0 md:max-w-0 md:overflow-hidden md:group-hover:max-w-xs md:group-hover:opacity-100 md:group-hover:ml-3">
+          <span
+            className="absolute left-16 text-base font-medium whitespace-nowrap bg-white px-3 py-2 rounded-lg opacity-0 invisible -translate-x-2 transition-all duration-200 group-hover:opacity-100 group-hover:visible group-hover:translate-x-0 md:static md:bg-transparent md:p-0 md:text-inherit md:opacity-0 md:visible md:translate-x-0 md:max-w-0 md:overflow-hidden md:group-hover:max-w-xs md:group-hover:opacity-100 md:group-hover:ml-3"
+            style={{ color: "#7a9d73" }}
+          >
             Call Now
           </span>
         </a>
@@ -104,14 +126,21 @@ const FloatingContact = () => {
         {/* Directions Button */}
         <button
           onClick={handleDirections}
-          className="flex items-center justify-center w-14 h-14 md:w-14 md:h-14 bg-amber-800 text-white rounded-full shadow-lg shadow-amber-800/20 active:bg-amber-900 transition-all duration-300 hover:shadow-xl hover:shadow-amber-800/30 hover:scale-105 group relative md:hover:w-auto md:hover:px-8"
+          className="flex items-center justify-center w-14 h-14 md:w-14 md:h-14 text-white rounded-full shadow-lg active:opacity-80 transition-all duration-300 hover:shadow-xl hover:scale-105 group relative md:hover:w-auto md:hover:px-8"
+          style={{
+            backgroundColor: "#7a9d73",
+            boxShadow: "0 10px 25px rgba(122, 157, 115, 0.2)",
+          }}
           aria-label="Get directions to our location"
         >
           <MapPin
             className="w-6 h-6 md:w-6 md:h-6"
             style={{ animation: "pulse 2s ease-in-out infinite" }}
           />
-          <span className="absolute left-16 text-base font-medium whitespace-nowrap bg-amber-800 text-white px-3 py-2 rounded-lg opacity-0 invisible -translate-x-2 transition-all duration-200 group-hover:opacity-100 group-hover:visible group-hover:translate-x-0 md:static md:bg-transparent md:p-0 md:text-inherit md:opacity-0 md:visible md:translate-x-0 md:max-w-0 md:overflow-hidden md:group-hover:max-w-xs md:group-hover:opacity-100 md:group-hover:ml-3">
+          <span
+            className="absolute left-16 text-base font-medium whitespace-nowrap text-white px-3 py-2 rounded-lg opacity-0 invisible -translate-x-2 transition-all duration-200 group-hover:opacity-100 group-hover:visible group-hover:translate-x-0 md:static md:bg-transparent md:p-0 md:text-inherit md:opacity-0 md:visible md:translate-x-0 md:max-w-0 md:overflow-hidden md:group-hover:max-w-xs md:group-hover:opacity-100 md:group-hover:ml-3"
+            style={{ backgroundColor: "#7a9d73" }}
+          >
             Get Directions
           </span>
         </button>
@@ -120,7 +149,11 @@ const FloatingContact = () => {
       {/* Toggle Button - Moved to bottom */}
       <button
         onClick={() => setIsExpanded(!isExpanded)}
-        className="flex items-center justify-center w-14 h-14 md:w-14 md:h-14 bg-amber-700 text-white rounded-full shadow-lg shadow-amber-900/20 active:bg-amber-800 transition-all duration-300 hover:shadow-xl hover:shadow-amber-900/30 hover:scale-105 ml-auto"
+        className="flex items-center justify-center w-14 h-14 md:w-14 md:h-14 text-white rounded-full shadow-lg active:opacity-80 transition-all duration-300 hover:shadow-xl hover:scale-105 ml-auto"
+        style={{
+          backgroundColor: "#7a9d73",
+          boxShadow: "0 10px 25px rgba(122, 157, 115, 0.2)",
+        }}
         aria-label={
           isExpanded ? "Collapse contact options" : "Expand contact options"
         }
